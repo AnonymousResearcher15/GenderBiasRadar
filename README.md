@@ -262,3 +262,5 @@ Gender Bias Mitigration analysis of **overall bias** using **Ministral3 (14b)** 
 | JOBADS4 | 2              | 1  | 1  | 1  | 1,00      | 0,50   | 0,67     |
 | JOBADS5 | 3              | 0  | 1  | 3  | 0,00      | 0,00   | 0,00     |
 | **Total** |              |    |    |    | **0,80**  | **0,35** | **0,49** |
+
+https://github.com/AnonymousResearcher15/GenderBiasRadar.git
