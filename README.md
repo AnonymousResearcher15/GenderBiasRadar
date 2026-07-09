@@ -263,4 +263,32 @@ Gender Bias Mitigration analysis of **overall bias** using **Ministral3 (14b)** 
 | JOBADS5 | 3              | 0  | 1  | 3  | 0,00      | 0,00   | 0,00     |
 | **Total** |              |    |    |    | **0,80**  | **0,35** | **0,49** |
 
-https://github.com/AnonymousResearcher15/GenderBiasRadar.git
+
+## Installation
+
+### 1) Clone the repository
+```bash
+git clone https://github.com/AnonymousResearcher15/GenderBiasRadar.git
+cd GenderBiasRadar
+```
+
+### 2) Create a virtual environment
+
+```bash
+python -m venv .venv
+source .venv/bin/activate      # macOS/Linux
+# .venv\Scripts\activate       # Windows (PowerShell)
+```
+
+### 3) Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+```bash
+python src/main.py
+```
+
