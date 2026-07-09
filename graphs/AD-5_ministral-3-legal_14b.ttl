@@ -1,0 +1,336 @@
+job:ZakcretSportsAE a job:Company ;
+    job:hasName "Zakcret Sports A.E." ;
+    job:hasSentenceId 0 .
+job:RetailChain a job:Company ;
+    job:hasName "μια από τις κορυφαίες αλυσίδες στον χώρο λιανικής πώλησης αθλητικών και sportswear ειδών" ;
+    job:hasSentenceId 1 .
+
+job:ZakcretSportsStore a job:Store ;
+    job:hasValue "36 φυσικά καταστήματα (31 Zakcret Sports & 5 SneakerCage)" ;
+    job:hasSentenceId 1 .
+
+job:OnlineStores a job:Store ;
+    job:hasValue "4 ηλεκτρονικά" ;
+    job:hasSentenceId 1 .
+
+job:EmployeesCount a job:JobDetails ;
+    job:hasValue "500 εργαζομένους" ;
+    job:hasSentenceId 1 .
+
+job:ChaniaStoreLocation a job:Location ;
+    job:hasValue "Χανιά" ;
+    job:hasSentenceId 1 .
+
+job:SalesPositionFullTime a job:JobPosition ;
+    job:hasTitle "πωλητές / πωλήτριες, πλήρους απασχόλησης" ;
+    job:offeredBy job:RetailChain ;
+    job:locatedAt job:ChaniaStoreLocation ;
+    job:hasSentenceId 1 .
+
+job:SalesPositionPartTime a job:JobPosition ;
+    job:hasTitle "πωλητές / πωλήτριες, μερικής απασχόλησης" ;
+    job:offeredBy job:RetailChain ;
+    job:locatedAt job:ChaniaStoreLocation ;
+    job:hasSentenceId 1 .
+job:ZakcretSportsAE a job:Company ;
+    job:searchFor job:RetailSalesPosition, job:CustomerServicePosition, job:StoreOrganizationPosition ;
+    job:offersBenifit job:CompetitiveSalaryBonus, job:PersonalDevelopmentOpportunities, job:ExcellentWorkingConditions, job:ContinuousTraining .
+
+job:RetailSalesPosition a job:JobPosition ;
+    job:hasTitle "Παροχή υψηλού επιπέδου εξυπηρέτησης στον πελάτη" ;
+    job:offeredBy job:ZakcretSportsAE ;
+    job:locatedAt ?storeLocation ;  # Missing store location, cannot link
+    job:hasResponsibility job:CustomerServiceResponsibility ;
+    job:requires job:RetailExperienceRequirement, job:EnglishLanguageSkill, job:ComputerUsageSkill, job:MilitaryObligationsFulfilled, job:TeamSpiritSkill, job:CustomerOrientedPersonality, job:CommunicationOrganizationSkill ;
+    job:hasSentenceId 2 .
+
+job:StoreOrganizationPosition a job:JobPosition ;
+    job:hasTitle "Τακτοποίηση προϊόντων και συμμετοχή στη διατήρηση οργανωμένου καταστήματος" ;
+    job:offeredBy job:ZakcretSportsAE ;
+    job:locatedAt ?storeLocation ;  # Missing store location, cannot link
+    job:hasResponsibility job:StoreOrganizationResponsibility ;
+    job:requires job:RetailExperienceRequirement, job:EnglishLanguageSkill, job:ComputerUsageSkill, job:MilitaryObligationsFulfilled, job:TeamSpiritSkill, job:CustomerOrientedPersonality, job:CommunicationOrganizationSkill ;
+    job:hasSentenceId 2 .
+
+job:CustomerServicePosition a job:JobPosition ;
+    job:hasTitle "Επίτευξη ποιοτικών και ποσοτικών στόχων του καταστήματος" ;
+    job:offeredBy job:ZakcretSportsAE ;
+    job:locatedAt ?storeLocation ;  # Missing store location, cannot link
+    job:hasResponsibility job:SalesTargetResponsibility ;
+    job:requires job:RetailExperienceRequirement, job:EnglishLanguageSkill, job:ComputerUsageSkill, job:MilitaryObligationsFulfilled, job:TeamSpiritSkill, job:CustomerOrientedPersonality, job:CommunicationOrganizationSkill ;
+    job:hasSentenceId 2 .
+
+job:CustomerServiceResponsibility a job:JobResponsibility ;
+    job:hasValue "Παροχή υψηλού επιπέδου εξυπηρέτησης στον πελάτη" ;
+    job:hasSentenceId 2 .
+
+job:StoreOrganizationResponsibility a job:JobResponsibility ;
+    job:hasValue "Τακτοποίηση προϊόντων και συμμετοχή στη διατήρηση οργανωμένου καταστήματος" ;
+    job:hasSentenceId 2 .
+
+job:SalesTargetResponsibility a job:JobResponsibility ;
+    job:hasValue "Επίτευξη ποιοτικών και ποσοτικών στόχων του καταστήματος" ;
+    job:hasSentenceId 2 .
+
+job:RetailExperienceRequirement a job:ExperienceRequirement ;
+    job:appliesTo "Προϋπηρεσία στον χώρο της λιανικής πώλησης" ;
+    job:hasSentenceId 2 .
+
+job:EnglishLanguageSkill a job:LanguageSkill ;
+    job:hasValue "Καλή γνώση της αγγλικής γλώσσας και χρήση Η/Υ" ;
+    job:hasSentenceId 2 .
+
+job:ComputerUsageSkill a job:TechnicalSkill ;
+    job:hasValue "Χρήση Η/Υ" ;
+    job:hasSentenceId 2 .
+
+job:MilitaryObligationsFulfilled a job:PersonalSkill ;
+    job:hasValue "Εκπληρωμένες οι στρατιωτικές υποχρεώσεις" ;
+    job:hasSentenceId 2 .
+
+job:TeamSpiritSkill a job:PersonalSkill ;
+    job:hasValue "Πνεύμα ομαδικότητας και συνεργασίας" ;
+    job:hasSentenceId 2 .
+
+job:CustomerOrientedPersonality a job:PersonalSkill ;
+    job:hasValue "Ευχάριστη προσωπικότητα με προσανατολισμό στον πελάτη" ;
+    job:hasSentenceId 2 .
+
+job:CommunicationOrganizationSkill a job:PersonalSkill ;
+    job:hasValue "Ανεπτυγμένη ικανότητα επικοινωνίας και οργάνωσης" ;
+    job:hasSentenceId 2 .
+
+job:CompetitiveSalaryBonus a job:Benefit ;
+    job:hasValue "Ανταγωνιστικές αποδοχές συν BONUS επίτευξης στόχων" ;
+    job:hasSentenceId 2 .
+
+job:PersonalDevelopmentOpportunities a job:Benefit ;
+    job:hasValue "Σημαντικές ευκαιρίες προσωπικής εξέλιξης" ;
+    job:hasSentenceId 2 .
+
+job:ExcellentWorkingConditions a job:Benefit ;
+    job:hasValue "Άριστες συνθήκες εργασίας σε ευχάριστο περιβάλλον" ;
+    job:hasSentenceId 2 .
+
+job:ContinuousTraining a job:Benefit ;
+    job:hasValue "Διαρκής εκπαίδευση" ;
+    job:hasSentenceId 2 .
+job:ZakcretSportsAE a job:Company ;
+    job:hasName "Zakcret Sports A.E." ;
+    job:hasSentenceId 0 .
+job:RetailChain a job:Company ;
+    job:hasName "μια από τις κορυφαίες αλυσίδες στον χώρο λιανικής πώλησης αθλητικών και sportswear ειδών" ;
+    job:hasSentenceId 1 .
+
+job:ZakcretSportsStore a job:Store ;
+    job:hasValue "36 φυσικά καταστήματα (31 Zakcret Sports & 5 SneakerCage)" ;
+    job:hasSentenceId 1 .
+
+job:OnlineStores a job:Store ;
+    job:hasValue "4 ηλεκτρονικά" ;
+    job:hasSentenceId 1 .
+
+job:EmployeesCount a job:JobDetails ;
+    job:hasValue "500 εργαζομένους" ;
+    job:hasSentenceId 1 .
+
+job:ChaniaStoreLocation a job:Location ;
+    job:hasValue "Χανιά" ;
+    job:hasSentenceId 1 .
+
+job:SalesPositionFullTime a job:JobPosition ;
+    job:hasTitle "πωλητές / πωλήτριες, πλήρους απασχόλησης" ;
+    job:offeredBy job:RetailChain ;
+    job:locatedAt job:ChaniaStoreLocation ;
+    job:hasSentenceId 1 .
+
+job:SalesPositionPartTime a job:JobPosition ;
+    job:hasTitle "πωλητές / πωλήτριες, μερικής απασχόλησης" ;
+    job:offeredBy job:RetailChain ;
+    job:locatedAt job:ChaniaStoreLocation ;
+    job:hasSentenceId 1 .
+job:CustomerServiceResponsibility a job:JobResponsibility ;
+    job:hasValue "Παροχή υψηλού επιπέδου εξυπηρέτησης στον πελάτη" ;
+    job:hasSentenceId 2 .
+
+job:ProductOrganizationResponsibility a job:JobResponsibility ;
+    job:hasValue "Τακτοποίηση προϊόντων και συμμετοχή στη διατήρηση οργανωμένου καταστήματος" ;
+    job:hasSentenceId 2 .
+
+job:StoreTargetsAchievementResponsibility a job:JobResponsibility ;
+    job:hasValue "Επίτευξη ποιοτικών και ποσοτικών στόχων του καταστήματος" ;
+    job:hasSentenceId 2 .
+
+job:SalesPositionFullTime job:hasResponsibility job:CustomerServiceResponsibility, job:ProductOrganizationResponsibility, job:StoreTargetsAchievementResponsibility .
+job:SalesPositionPartTime job:hasResponsibility job:CustomerServiceResponsibility, job:ProductOrganizationResponsibility, job:StoreTargetsAchievementResponsibility .
+job:RetailExperienceRequirement a job:ExperienceRequirement ;
+    job:appliesTo "Προϋπηρεσία στον χώρο της λιανικής πώλησης" ;
+    job:hasSentenceId 3 .
+
+job:EnglishLanguageProficiency a job:LanguageSkill ;
+    job:hasValue "Καλή γνώση της αγγλικής γλώσσας και χρήση Η/Υ" ;
+    job:hasSentenceId 3 .
+
+job:MilitaryServiceRequirement a job:Requirement ;
+    job:appliesTo "Εκπληρωμένες οι στρατιωτικές υποχρεώσεις" ;
+    job:hasSentenceId 3 .
+
+job:TeamSpiritSkill a job:PersonalSkill ;
+    job:hasValue "Πνεύμα ομαδικότητας και συνεργασίας" ;
+    job:hasSentenceId 3 .
+
+job:CustomerOrientedPersonality a job:PersonalSkill ;
+    job:hasValue "Ευχάριστη προσωπικότητα με προσανατολισμό στον πελάτη" ;
+    job:hasSentenceId 3 .
+
+job:CommunicationOrganizationSkill a job:PersonalSkill ;
+    job:hasValue "Ανεπτυγμένη ικανότητα επικοινωνίας και οργάνωσης" ;
+    job:hasSentenceId 3 .
+
+job:SalesPositionFullTime job:requires job:RetailExperienceRequirement, job:EnglishLanguageProficiency, job:MilitaryServiceRequirement, job:TeamSpiritSkill, job:CustomerOrientedPersonality, job:CommunicationOrganizationSkill .
+job:SalesPositionPartTime job:requires job:RetailExperienceRequirement, job:EnglishLanguageProficiency, job:MilitaryServiceRequirement, job:TeamSpiritSkill, job:CustomerOrientedPersonality, job:CommunicationOrganizationSkill .
+job:ZakcretSportsAE job:offersBenifit job:CompetitiveSalaryBonus, job:PersonalDevelopmentOpportunities, job:ExcellentWorkingConditions, job:ContinuousTraining ;
+    job:hasSentenceId 4 .
+
+job:CompetitiveSalaryBonus a job:Benefit ;
+    job:hasValue "Ανταγωνιστικές αποδοχές συν BONUS επίτευξης στόχων" ;
+    job:hasSentenceId 4 .
+
+job:PersonalDevelopmentOpportunities a job:Benefit ;
+    job:hasValue "Σημαντικές ευκαιρίες προσωπικής εξέλιξης" ;
+    job:hasSentenceId 4 .
+
+job:ExcellentWorkingConditions a job:Benefit ;
+    job:hasValue "Άριστες συνθήκες εργασίας σε ευχάριστο περιβάλλον" ;
+    job:hasSentenceId 4 .
+
+job:ContinuousTraining a job:Benefit ;
+    job:hasValue "Διαρκής εκπαίδευση" ;
+    job:hasSentenceId 4 .
+job:ZakcretSportsAE job:searchFor job:CreativeAthleticTeamMemberPosition .
+job:CreativeAthleticTeamMemberPosition a job:JobPosition ;
+    job:hasTitle "μέλος της ομάδας Zakcret" ;
+    job:offeredBy job:ZakcretSportsAE ;
+    job:hasSentenceId 5 .
+
+job:AthleticFashionInterestRequirement a job:Requirement ;
+    job:appliesTo "αγαπάς την αθλητική & sportswear υπόδηση και ένδυση" ;
+    job:hasSentenceId 5 .
+job:CreativeAthleticPassionRequirement a job:Requirement ;
+    job:appliesTo "δημιουργικό πνεύμα με πάθος για τον αθλητισμό" ;
+    job:hasSentenceId 5 .
+
+job:TeamIntegrationDesireRequirement a job:Requirement ;
+    job:appliesTo "θέλεις να γίνεις μέλος μιας δυναμικής ομάδας" ;
+    job:hasSentenceId 5 .
+
+job:CreativeAthleticTeamMemberPosition job:requires job:AthleticFashionInterestRequirement, job:CreativeAthleticPassionRequirement, job:TeamIntegrationDesireRequirement .
+job:ZakcretSportsAE a job:Company ;
+    job:hasName "Zakcret Sports A.E." ;
+    job:hasSentenceId 0 .
+gr:KoryfaiosLianikisAthlitikonEidon a gr:Company ;
+        gr:hasName "μια από τις κορυφαίες αλυσίδες στον χώρο λιανικής πώλησης αθλητικών και sportswear ειδών" ;
+        gr:hasSentenceId 1 .
+
+    gr:ZakcretSports a gr:Store ;
+        gr:hasValue "Zakcret Sports &" ;
+        gr:hasSentenceId 1 .
+
+    gr:SneakerCage a gr:Store ;
+        gr:hasValue "SneakerCage" ;
+        gr:hasSentenceId 1 .
+
+    gr:KoryfaiosLianikisAthlitikonEidon gr:searchFor gr:PoliTesProsopikoMerikoOro .
+    gr:PoliTesProsopikoMerikoOro a gr:JobPosition ;
+        gr:hasTitle "πωλητές / πωλήτριες" ;
+        gr:offeredBy gr:KoryfaiosLianikisAthlitikonEidon ;
+        gr:locatedAt gr:XaniaStore ;
+        gr:hasSentenceId 1 .
+
+    gr:XaniaStore a gr:Location ;
+        gr:hasValue "Χανιά" ;
+        gr:hasSentenceId 1 .
+
+    gr:AthlitikaKatasthmata a gr:Requirement ;
+        gr:appliesTo "36 φυσικά καταστήματα (31 Zakcret Sports & 5 SneakerCage)" ;
+        gr:hasSentenceId 1 .
+    gr:KoryfaiosLianikisAthlitikonEidon gr:requires gr:AthlitikaKatasthmata .
+
+    gr:ElektronikaKatasthmata a gr:Requirement ;
+        gr:appliesTo "4 ηλεκτρονικά" ;
+        gr:hasSentenceId 1 .
+    gr:KoryfaiosLianikisAthlitikonEidon gr:requires gr:ElektronikaKatasthmata .
+
+    gr:Ergazomenoi a gr:Requirement ;
+        gr:appliesTo "500 εργαζομένους" ;
+        gr:hasSentenceId 1 .
+    gr:KoryfaiosLianikisAthlitikonEidon gr:requires gr:Ergazomenoi .
+gr:ParoxiArmodiotites a gr:JobResponsibility ;
+    gr:hasValue "Κύριες Αρμοδιότητες: Παροχή υψηλού επιπέδου εξυπηρέτησης στον πελάτη, Τακτοποίηση προϊόντων και συμμετοχή στη διατήρηση οργανωμένου καταστήματος, Επίτευξη ποιοτικών και ποσοτικών στόχων του καταστήματος" ;
+    gr:hasSentenceId 2 .
+
+gr:PoliTesProsopikoMerikoOro gr:hasResponsibility gr:ParoxiArmodiotites .
+gr:ProyphiresiaLianikisPoles a gr:ExperienceRequirement ;
+    gr:appliesTo "Προϋπηρεσία στον χώρο της λιανικής πώλησης" ;
+    gr:hasSentenceId 3 .
+
+gr:KaliGnosiAnglikisGlossas a gr:LanguageSkill ;
+    gr:hasValue "Καλή γνώση της αγγλικής γλώσσας" ;
+    gr:hasSentenceId 3 .
+
+gr:XrisiHY a gr:TechnicalSkill ;
+    gr:hasValue "Χρήση Η/Υ" ;
+    gr:hasSentenceId 3 .
+
+gr:EkpliromenesMilitarikesYpochreoseis a gr:Requirement ;
+    gr:appliesTo "Εκπληρωμένες οι στρατιωτικές υποχρεώσεις" ;
+    gr:hasSentenceId 3 .
+
+gr:PneumaOmadikotitasSynergasias a gr:PersonalSkill ;
+    gr:hasValue "Πνεύμα ομαδικότητας και συνεργασίας" ;
+    gr:hasSentenceId 3 .
+
+gr:EucharistisProsopikotita a gr:PersonalSkill ;
+    gr:hasValue "Ευχάριστη προσωπικότητα με προσανατολισμό στον πελάτη" ;
+    gr:hasSentenceId 3 .
+
+gr:AneptygmeniIkanotitaEpikoinoniasOrganosis a gr:PersonalSkill ;
+    gr:hasValue "Ανεπτυγμένη ικανότητα επικοινωνίας και οργάνωσης" ;
+    gr:hasSentenceId 3 .
+
+gr:PoliTesProsopikoMerikoOro gr:requires gr:ProyphiresiaLianikisPoles, gr:KaliGnosiAnglikisGlossas, gr:XrisiHY, gr:EkpliromenesMilitarikesYpochreoseis, gr:PneumaOmadikotitasSynergasias, gr:EucharistisProsopikotita, gr:AneptygmeniIkanotitaEpikoinoniasOrganosis .
+gr:ZakcretSportsAE a gr:Company ;
+    gr:hasName "Η εταιρεία" ;
+    gr:offersBenifit gr:AntagonistikesApodochesSynBonus, gr:SigmantikesEvkairiesProsopikisExelixis, gr:AristesSynthikesErgasiasSeEucharistoPerivallon, gr:DiakrisEkpaidefsis ;
+    gr:hasSentenceId 4 .
+
+gr:AntagonistikesApodochesSynBonus a gr:Benefit ;
+    gr:hasValue "Ανταγωνιστικές αποδοχές συν BONUS επίτευξης στόχων" ;
+    gr:hasSentenceId 4 .
+
+gr:SigmantikesEvkairiesProsopikisExelixis a gr:Benefit ;
+    gr:hasValue "Σημαντικές ευκαιρίες προσωπικής εξέλιξης" ;
+    gr:hasSentenceId 4 .
+
+gr:AristesSynthikesErgasiasSeEucharistoPerivallon a gr:Benefit ;
+    gr:hasValue "Άριστες συνθήκες εργασίας σε ευχάριστο περιβάλλον" ;
+    gr:hasSentenceId 4 .
+
+gr:DiakrisEkpaidefsis a gr:Benefit ;
+    gr:hasValue "Διαρκής εκπαίδευση" ;
+    gr:hasSentenceId 4 .
+gr:ZakcretSportsAE gr:searchFor gr:AthlitikoProsopikoMerikoOro .
+gr:AthlitikoProsopikoMerikoOro a gr:JobPosition ;
+    gr:hasTitle "μέλος της ομάδας Zakcret" ;
+    gr:offeredBy gr:ZakcretSportsAE ;
+    gr:hasSentenceId 5 .
+
+gr:AgapaAthlitikiYpodisiKaiEnydsi a gr:PersonalSkill ;
+    gr:hasValue "Αγάπας την αθλητική & sportswear υπόδηση και ένδυση" ;
+    gr:hasSentenceId 5 .
+
+gr:DimiourgikoPneumaMetapasiAthlitismo a gr:PersonalSkill ;
+    gr:hasValue "Δημιουργικό πνεύμα με πάθος για τον αθλητισμό" ;
+    gr:hasSentenceId 5 .
+
+gr:AthlitikoProsopikoMerikoOro gr:requires gr:AgapaAthlitikiYpodisiKaiEnydsi, gr:DimiourgikoPneumaMetapasiAthlitismo .

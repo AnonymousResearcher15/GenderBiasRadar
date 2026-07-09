@@ -1,0 +1,374 @@
+ld:areios_pagos_z_criminal_chamber a ld:SupremeCourt ;
+    ld:hasJudicialPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:panel_0 a ld:JudicialPanel ;
+    ld:hasPanelMember ld:georgios_sakkas,
+                      ld:dimitrios_georgas,
+                      ld:dimitrios_tziouvas,
+                      ld:georgios_papailiadis,
+                      ld:maria_gnatsiou ;
+    ld:hasRapporteur ld:dimitrios_tziouvas ;
+    ld:hasSentenceId 0.
+
+ld:georgios_sakkas a ld:VicePresidentJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Σακκάς" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_georgas a ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Γεώργας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_tziouvas a ld:RapporteurJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Τζιούβας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:georgios_papailiadis a ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Παπαηλιάδης" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:maria_gnatsiou a ld:SupremeCourtJudge ;
+    ld:hasValue "Μαρία Γκανιάτσου" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+ld:areios_pagos_z_criminal_chamber ld:hasProsecutor ld:athanasios_akritidis ;
+    ld:hasClerk ld:aikaterini_sitara ;
+    ld:hasPublicHearing ld:public_hearing_2017_03_15 ;
+    ld:hasSentenceId 1.
+
+ld:athanasios_akritidis a ld:DeputyProsecutor ;
+    ld:hasValue "Αθανάσιος Ακριτίδης" ;
+    ld:hasSentenceId 1.
+
+ld:aikaterini_sitara a ld:Clerk ;
+    ld:hasValue "Αικατερίνη Σιταρά" ;
+    ld:hasSentenceId 1.
+
+ld:public_hearing_2017_03_15 a ld:PublicHearing ;
+    ld:hearingDate "2017-03-15"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου" ;
+    ld:hasSentenceId 1.
+
+ld:panagiota_aggalou a ld:Defendant ;
+    ld:hasValue "Παναγιώτα Αγάλου" ;
+    ld:hasRepresentative ld:georgios_kakarantzas ;
+    ld:hasSentenceId 1.
+
+ld:georgios_kakarantzas a ld:Counsel ;
+    ld:hasValue "Γεώργιος Κακαράντζας" ;
+    ld:hasSentenceId 1.
+# EMPTY
+ld:teza_ae a ld:CivilClaimant ;
+    ld:hasValue "ΤΕΖ Α.Ε." ;
+    ld:hasSentenceId 3.
+ld:teza_ae ld:hasRepresentative ld:ilias_tompidis ;
+    ld:hasSentenceId 4.
+
+ld:ilias_tompidis a ld:Counsel ;
+    ld:hasValue "Ηλία Τομπαίδη" ;
+    ld:hasSentenceId 4.
+ld:larissa_court_of_appeal a ld:CourtOfAppeal ;
+    ld:hasValue "Πενταμελές Εφετείο Λάρισας" ;
+    ld:hasSentenceId 5.
+
+ld:defendant_appellant_5 a ld:Defendant ;
+    ld:hasSentenceId 5.
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+ld:areios_pagos_z_criminal_chamber a ld:SupremeCourt ;
+    ld:hasJudicialPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:panel_0 a ld:JudicialPanel ;
+    ld:hasPanelMember ld:georgios_sakkas,
+                      ld:dimitrios_georgas,
+                      ld:dimitrios_tziouvas,
+                      ld:georgios_papailiadis,
+                      ld:maria_gnatsiou ;
+    ld:hasRapporteur ld:dimitrios_tziouvas ;
+    ld:hasSentenceId 0.
+
+ld:georgios_sakkas a ld:VicePresidentJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Σακκάς" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_georgas a ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Γεώργας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_tziouvas a ld:RapporteurJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Τζιούβας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:georgios_papailiadis a ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Παπαηλιάδης" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:maria_gnatsiou a ld:SupremeCourtJudge ;
+    ld:hasValue "Μαρία Γκανιάτσου" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+ld:areios_pagos_z_criminal_chamber ld:hasProsecutor ld:athanasios_akritidis ;
+    ld:hasClerk ld:aikaterini_sitara ;
+    ld:hasPublicHearing ld:public_hearing_2017_03_15 ;
+    ld:hasSentenceId 1.
+
+ld:athanasios_akritidis a ld:DeputyProsecutor ;
+    ld:hasValue "Αθανάσιος Ακριτίδης" ;
+    ld:hasSentenceId 1.
+
+ld:aikaterini_sitara a ld:Clerk ;
+    ld:hasValue "Αικατερίνη Σιταρά" ;
+    ld:hasSentenceId 1.
+
+ld:public_hearing_2017_03_15 a ld:PublicHearing ;
+    ld:hearingDate "2017-03-15"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου" ;
+    ld:hasSentenceId 1.
+
+ld:panagiota_aggalou a ld:Defendant ;
+    ld:hasValue "Παναγιώτα Αγάλου" ;
+    ld:hasRepresentative ld:georgios_kakarantzas ;
+    ld:hasSentenceId 1.
+
+ld:georgios_kakarantzas a ld:Counsel ;
+    ld:hasValue "Γεώργιος Κακαράντζας" ;
+    ld:hasSentenceId 1.
+# EMPTY
+ld:teza_ae a ld:CivilClaimant ;
+    ld:hasValue "ΤΕΖ Α.Ε." ;
+    ld:hasSentenceId 3.
+ld:teza_ae ld:hasRepresentative ld:ilias_tompidis ;
+    ld:hasSentenceId 4.
+
+ld:ilias_tompidis a ld:Counsel ;
+    ld:hasValue "Ηλία Τομπαίδη" ;
+    ld:hasSentenceId 4.
+ld:larissa_court_of_appeal a ld:CourtOfAppeal ;
+    ld:hasValue "Πενταμελές Εφετείο Λάρισας" ;
+    ld:hasSentenceId 5.
+
+ld:defendant_appellant_5 a ld:Defendant ;
+    ld:hasSentenceId 5.
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+ld:areios_pagos_z_criminal_chamber a ld:SupremeCourt ;
+    ld:hasJudicialPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:panel_0 a ld:JudicialPanel ;
+    ld:hasPanelMember ld:georgios_sakkas ,
+                      ld:dimitrios_georgas ,
+                      ld:dimitrios_tziouvas ,
+                      ld:georgios_papailiadis ,
+                      ld:maria_gnatsiou ;
+    ld:hasRapporteur ld:dimitrios_tziouvas ;
+    ld:hasSentenceId 0.
+
+ld:georgios_sakkas a ld:VicePresidentJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Σακκάς" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_georgas a ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Γεώργας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_tziouvas a ld:RapporteurJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Τζιούβας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:georgios_papailiadis a ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Παπαηλιάδης" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:maria_gnatsiou a ld:SupremeCourtJudge ;
+    ld:hasValue "Μαρία Γκανιάτσου" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+ld:areios_pagos_z_criminal_chamber ld:hasProsecutor ld:athanasios_akritidis ;
+    ld:hasClerk ld:aikaterini_sitara ;
+    ld:hasPublicHearing ld:public_hearing_2017_03_15 ;
+    ld:hasSentenceId 1.
+
+ld:athanasios_akritidis a ld:DeputyProsecutor ;
+    ld:hasValue "Αθανάσιος Ακριτίδης" ;
+    ld:hasSentenceId 1.
+
+ld:aikaterini_sitara a ld:Clerk ;
+    ld:hasValue "Αικατερίνη Σιταρά" ;
+    ld:hasSentenceId 1.
+
+ld:public_hearing_2017_03_15 a ld:PublicHearing ;
+    ld:hearingDate "2017-03-15"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου" ;
+    ld:hasSentenceId 1.
+
+ld:panagiota_agalous a ld:Defendant ;
+    ld:hasValue "Παναγιώτα Αγάλου του Γεωργίου" ;
+    ld:hasRepresentative ld:georgios_kakarantzas ;
+    ld:hasSentenceId 1.
+
+ld:georgios_kakarantzas a ld:Counsel ;
+    ld:hasValue "Γεώργιος Κακαράντζας" ;
+    ld:hasSentenceId 1.
+ld:larissa_court_of_appeal a ld:CourtOfAppeal ;
+    ld:hasValue "Πενταμελές Εφετείο Λάρισας" ;
+    ld:hasSentenceId 2.
+
+ld:decision_391_2015 a ld:LegalEntity ;
+    ld:hasValue "απόφαση 391/2015" ;
+    ld:hasSentenceId 2.
+
+ld:larissa_court_of_appeal ld:hasValue "391/2015 αποφάσεως του Πενταμελούς Εφετείου Λάρισας" ;
+    ld:hasSentenceId 2.
+ld:tez_ae a ld:CivilClaimant ;
+    ld:hasValue "ΤΕΖ Α.Ε." ;
+    ld:hasSentenceId 3.
+ld:tez_ae ld:hasRepresentative ld:ilias_tompidis ;
+    ld:hasSentenceId 4.
+
+ld:ilias_tompidis a ld:Counsel ;
+    ld:hasValue "Ηλία Τομπαίδη" ;
+    ld:hasSentenceId 4.
+ld:larissa_court_of_appeal ld:hasValue "Το Πενταμελές Εφετείο Λάρισας με την ως άνω απόφασή του διέταξε όσα λεπτομερώς αναφέρονται σ' αυτή" ;
+    ld:hasSentenceId 5.
+
+ld:appeal_request_191_17 a ld:LegalEntity ;
+    ld:hasValue "αίτηση αναιρέσεως αριθμός 191/17" ;
+    ld:hasDate "2016-12-30"^^xsd:date ;
+    ld:hasSentenceId 5.
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+ld:areios_pagos_z_criminal_chamber a ld:SupremeCourt ;
+    ld:hasJudicialPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:panel_0 a ld:JudicialPanel ;
+    ld:hasPanelMember ld:georgios_sakkas,
+                      ld:dimitrios_georgas,
+                      ld:dimitrios_tziouvas,
+                      ld:georgios_papailiadis,
+                      ld:maria_gnatsiou ;
+    ld:hasRapporteur ld:dimitrios_tziouvas ;
+    ld:hasSentenceId 0.
+
+ld:georgios_sakkas a ld:VicePresidentJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Σακκάς" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_georgas a ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Γεώργας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_tziouvas a ld:RapporteurJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Τζιούβας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:georgios_papailiadis a ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Παπαηλιάδης" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+
+ld:maria_gnatsiou a ld:SupremeCourtJudge ;
+    ld:hasValue "Μαρία Γκανιάτσου" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0.
+ld:areios_pagos_z_criminal_chamber ld:hasProsecutor ld:athanasios_akritidis ;
+    ld:hasClerk ld:aikaterini_sitara ;
+    ld:hasPublicHearing ld:public_hearing_2017_03_15 ;
+    ld:hasSentenceId 1.
+
+ld:athanasios_akritidis a ld:DeputyProsecutor ;
+    ld:hasValue "Αθανάσιος Ακριτίδης" ;
+    ld:hasSentenceId 1.
+
+ld:aikaterini_sitara a ld:Clerk ;
+    ld:hasValue "Αικατερίνη Σιταρά" ;
+    ld:hasSentenceId 1.
+
+ld:public_hearing_2017_03_15 a ld:PublicHearing ;
+    ld:hearingDate "2017-03-15"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου" ;
+    ld:hasSentenceId 1.
+
+ld:panagiota_aggalou a ld:Defendant ;
+    ld:hasValue "Παναγιώτα Αγάλου" ;
+    ld:hasRepresentative ld:georgios_kakarantzas ;
+    ld:hasSentenceId 1.
+
+ld:georgios_kakarantzas a ld:Counsel ;
+    ld:hasValue "Γεώργιος Κακαράντζας" ;
+    ld:hasSentenceId 1.
+# EMPTY
+ld:teza_ae a ld:CivilClaimant ;
+    ld:hasValue "ΤΕΖ Α.Ε." ;
+    ld:hasSentenceId 3.
+ld:teza_ae ld:hasRepresentative ld:ilias_tompidis ;
+    ld:hasSentenceId 4.
+
+ld:ilias_tompidis a ld:Counsel ;
+    ld:hasValue "Ηλία Τομπαίδη" ;
+    ld:hasSentenceId 4.
+ld:larissa_court_of_appeal a ld:CourtOfAppeal ;
+    ld:hasValue "Πενταμελές Εφετείο Λάρισας" ;
+    ld:hasSentenceId 5.
+
+ld:defendant_appellant_5 a ld:Defendant ;
+    ld:hasSentenceId 5.
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY

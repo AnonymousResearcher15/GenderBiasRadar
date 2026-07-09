@@ -1,0 +1,95 @@
+ld:areios_pagos_z_criminal_chamber a ld:Court ;
+    ld:hasValue "Άρειος Πάγος, Ζ' Ποινικό Τμήμα" ;
+    ld:sentenceId "0".
+ld:areios_pagos_z_criminal_chamber ld:hasProsecutor ld:panagiotis_karagiannis ;
+    ld:hasClerk ld:aikaterini_sitara ;
+    ld:hasPublicHearing ld:public_hearing_2017_02_15 ;
+    ld:sentenceId "1".
+
+ld:panagiotis_karagiannis a ld:DeputyProsecutor ;
+    ld:hasValue "Παναγιώτης Καραγιάννης" ;
+    ld:sentenceId "1".
+
+ld:aikaterini_sitara a ld:Clerk ;
+    ld:hasValue "Αικατερίνη Σιταρά" ;
+    ld:sentenceId "1".
+
+ld:public_hearing_2017_02_15 a ld:PublicHearing ;
+    ld:hearingDate "2017-02-15"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου" ;
+    ld:sentenceId "1".
+
+ld:KonstantinosRoikos a ld:Defendant ;
+    ld:hasName "Κωνσταντίνος Ρόικος" ;
+    ld:hasRepresentative ld:georgios_bouloukos ;
+    ld:sentenceId "1".
+
+ld:georgios_bouloukos a ld:Counsel ;
+    ld:hasValue "Γεώργιος Μπουλούκος" ;
+    ld:sentenceId "1".
+ld:TriMemberCourtOfAppealsAthens a ld:CourtOfAppeal ;
+    ld:hasValue "Τριμελές Εφετείο Αθηνών" ;
+    ld:sentenceId "2".
+
+ld:Decision5206_2016 a ld:LegalEntity ;
+    ld:hasValue "Απόφαση 5206/2016 του Τριμελούς Εφετείου Αθηνών" ;
+    ld:issuedBy ld:TriMemberCourtOfAppealsAthens ;
+    ld:sentenceId "2".
+ld:IoannisKontakis a ld:CivilClaimant ;
+    ld:hasName "Ιωάννης Κοντάκης" ;
+    ld:sentenceId "3".
+ld:AppealDecisionRequest_123_2016 a ld:LegalEntity ;
+    ld:hasValue "Αίτηση αναίρεσης 123/2016" ;
+    ld:sentenceId "4".
+
+ld:KonstantinosRoikos ld:lodgesAppeal ld:AppealDecisionRequest_123_2016 ;
+    ld:sentenceId "4".
+
+ld:AppealDecisionRequest_123_2016 ld:hasDateFiled "2016-10-19"^^xsd:date ;
+    ld:sentenceId "4".
+ld:areios_pagos_z_criminal_chamber ld:hasProsecutor ld:dimitrios_papageorgiou ;
+    ld:sentenceId "5".
+
+ld:dimitrios_papageorgiou a ld:DeputyProsecutor ;
+    ld:hasValue "Δημήτριος Παπαγεωργίου" ;
+    ld:sentenceId "5".
+
+ld:TakisPapadakis ld:hasRepresentative ld:panagiotis_christopoulos ;
+    ld:sentenceId "5".
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+ld:A_P a ld:CourtOfAppeal ;
+    ld:hasValue "Αρείος Πάγος" ;
+    ld:sentenceId "21".
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+ld:AppealDecisionRequest_185_2016 a ld:LegalEntity ;
+    ld:hasValue "Αίτηση αναίρεσης υπ' αριθ. 185/2016" ;
+    ld:sentenceId "30".
+
+ld:TriMemberCourtOfCrimesThrace a ld:CourtOfAppeal ;
+    ld:hasValue "Τριμελές Εφετείο Κακουργημάτων Θράκης" ;
+    ld:sentenceId "30".
+
+ld:AppealDecisionRequest_185_2016 ld:issuedBy ld:TriMemberCourtOfCrimesThrace ;
+    ld:sentenceId "30".
+# EMPTY

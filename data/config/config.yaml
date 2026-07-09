@@ -1,0 +1,25 @@
+model:
+  slm:
+    graph_construction: gemma4:26b # #ministral-3-legal:14b
+    mitigation: ministral-3:14b
+    temperature: 0.0
+  embeddings:
+    name: lighteternal/stsb-xlm-r-greek-transfer #lighteternal/stsb-xlm-r-greek-transfer #dimitriz/st-greek-media-bert-base-uncased
+    nlp_model: el_core_news_lg
+  
+database:
+  sqlite_path: "./words_database.db"
+
+thresholds:
+  bias_threshold: 0.02
+  word_threshold: 0.03
+
+experiment:
+  domain: 1 # 1: JobPosting, 2: Legal
+  ontology_name: "JobPostingOnto" # CourtRulingOnto, JobPostingOnto
+  document_path: "./test_documents/AD-2.txt"
+  graph_path: "./graphs/AD-2_gemma4_26b.ttl"
+  embeddings_words_path: "./data/config/words_for_embeddings.json"
+  rag_data: "./data/rag_examples/job_ads_examples.json"
+  mitigation_only: True
+  embeddings_method : "centroid"

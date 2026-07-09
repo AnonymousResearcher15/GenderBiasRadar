@@ -1,0 +1,100 @@
+
+📄 'Η εταιρεία μας'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0293 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'θέση στον τομέα των πωλήσεων'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0203 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Θεσσαλονίκη'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0104 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Ευκαιρίες άμεσης εξέλιξης'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0254 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Επαγγελματική νοοτροπία'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0478 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Οργανωτικές και επικοινωνιακές δεξιότητες'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0291 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'μόνιμος κάτοικος Θεσσαλονίκης'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0242 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'κάτοικος': +0.0211 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'FEM'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: μόνιμη/ος κάτοικος της Θεσσαλονίκης
+
+📄 'Άμεση διαθεσιμότητα'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0024 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'δεν έχεις προϋπηρεσία'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0462 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Σύγχρονο και ευχάριστο περιβάλλον'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0053 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Πλήρη εκπαίδευση και τακτικά workshops'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0071 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Ικανότητα συνεργασίας και ομαδικού πνεύματος'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0422 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO

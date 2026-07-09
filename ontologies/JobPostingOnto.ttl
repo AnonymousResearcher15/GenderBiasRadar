@@ -1,0 +1,282 @@
+@prefix : <http://example.org/job-ontology#> .
+@prefix gr: <http://example.org/greek-terms#> .
+@prefix job: <http://example.org/job-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/job-ontology#> .
+
+<http://example.org/job-ontology> rdf:type owl:Ontology ;
+                                   rdfs:comment "Ontology capturing job posting information for IAPONIKI S.A."@en ;
+                                   rdfs:label "Job Posting Ontology"@en ,
+                                              "Οντολογία Αγγελίας Εργασίας"@el .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/job-ontology#hasCommunicationDetails
+job:hasCommunicationDetails rdf:type owl:ObjectProperty ;
+                            rdfs:label "hasCommunicationDetails"@en ,
+                                       "έχει στοιχεία επικοινωνίας" .
+
+
+###  http://example.org/job-ontology#hasResponsibility
+job:hasResponsibility rdf:type owl:ObjectProperty ;
+                      rdfs:domain job:JobPosition ;
+                      rdfs:range job:JobResponsibility ;
+                      rdfs:label "has responsibility"@en ,
+                                 "έχει αρμοδιότητα"@el .
+
+
+###  http://example.org/job-ontology#locatedAt
+job:locatedAt rdf:type owl:ObjectProperty ;
+              rdfs:domain job:Company ,
+                          job:JobPosition ;
+              rdfs:range job:Location ;
+              rdfs:label "located at"@en ,
+                         "βρίσκεται στην"@el .
+
+
+###  http://example.org/job-ontology#offeredBy
+job:offeredBy rdf:type owl:ObjectProperty ;
+              rdfs:domain job:JobPosition ;
+              rdfs:range job:Company ;
+              rdfs:label "offered by"@en ,
+                         "προσφέρεται από"@el .
+
+
+###  http://example.org/job-ontology#offersBenifit
+job:offersBenifit rdf:type owl:ObjectProperty ;
+                  rdfs:domain job:Company ;
+                  rdfs:range job:Benefit ;
+                  rdfs:comment "It is referred to the benefits offered by the company for this position"@en ;
+                  rdfs:label "offers benifits"@en ,
+                             "προσφέρει"@el .
+
+
+###  http://example.org/job-ontology#requires
+job:requires rdf:type owl:ObjectProperty ;
+             rdfs:domain job:JobPosition ;
+             rdfs:range job:Requirement ;
+             rdfs:label "requires"@en ,
+                        "απαιτεί"@el .
+
+
+###  http://example.org/job-ontology#searchFor
+job:searchFor rdf:type owl:ObjectProperty ;
+              rdfs:domain job:Company ;
+              rdfs:range job:JobPosition ;
+              rdfs:label "search for"@en ,
+                         "αναζητεί"@el .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasCommunicationDetails
+<http://www.co-ode.org/ontologies/ont.owl#hasCommunicationDetails> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain job:Company ;
+                                                                   rdfs:range job:CommunicationDetails ;
+                                                                   rdfs:label "έχει στοιχεία επικοινωνίας"@el .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasDetails
+<http://www.co-ode.org/ontologies/ont.owl#hasDetails> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain job:Company ;
+                                                      rdfs:range <http://www.co-ode.org/ontologies/ont.owl#CompanyDescription> ;
+                                                      rdfs:label "έχει περιγραφή" .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#hasJodDetails
+<http://www.co-ode.org/ontologies/ont.owl#hasJodDetails> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain job:JobPosition ;
+                                                         rdfs:range <http://www.co-ode.org/ontologies/ont.owl#JobDetails> ;
+                                                         rdfs:label "έχει λεπτομέρειες θέσης"@el .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/job-ontology#appliesTo
+job:appliesTo rdf:type owl:DatatypeProperty ;
+              rdfs:domain job:Requirement ;
+              rdfs:range xsd:string ;
+              rdfs:label "applies to"@en ,
+                         "ισχύει για"@el .
+
+
+###  http://example.org/job-ontology#hasName
+job:hasName rdf:type owl:DatatypeProperty ;
+            rdfs:domain job:Company ;
+            rdfs:range xsd:string ;
+            rdfs:label "hasName"@en ,
+                       "έχει ονομασία"@el .
+
+
+###  http://example.org/job-ontology#hasSentenceId
+job:hasSentenceId rdf:type owl:DatatypeProperty ;
+                  rdfs:domain job:Benefit ,
+                              job:Company ,
+                              job:EducationRequirement ,
+                              job:ExperienceRequirement ,
+                              job:JobPosition ,
+                              job:JobResponsibility ,
+                              job:LanguageSkill ,
+                              job:Location ,
+                              job:PersonalSkill ,
+                              job:Requirement ,
+                              job:Store ,
+                              job:TechnicalSkill ;
+                  rdfs:range xsd:int ;
+                  rdfs:label "hasSentenceId"@en ,
+                             "εντοπίζεται στην πρόταση"@el .
+
+
+###  http://example.org/job-ontology#hasTitle
+job:hasTitle rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain job:JobPosition ;
+             rdfs:range xsd:string ;
+             rdfs:label "hasTitle"@en ,
+                        "έχει τίτλο"@el .
+
+
+###  http://example.org/job-ontology#hasValue
+job:hasValue rdf:type owl:DatatypeProperty ;
+             rdfs:domain job:Benefit ,
+                         job:CommunicationDetails ,
+                         job:JobResponsibility ,
+                         job:Location ,
+                         job:Requirement ,
+                         <http://www.co-ode.org/ontologies/ont.owl#CompanyDescription> ,
+                         <http://www.co-ode.org/ontologies/ont.owl#JobDetails> ;
+             rdfs:range xsd:string ;
+             rdfs:label "hasValue"@en ,
+                        "έχει τιμή"@el .
+
+
+###  http://example.org/job-ontology#jobDescription
+job:jobDescription rdf:type owl:DatatypeProperty ;
+                   rdfs:domain job:JobPosition ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "jobDescription"@en ,
+                              "περιγραφή θέσης"@el .
+
+
+###  http://example.org/job-ontology#minimumYears
+job:minimumYears rdf:type owl:DatatypeProperty ;
+                 rdfs:domain job:ExperienceRequirement ;
+                 rdfs:range xsd:integer ;
+                 rdfs:label "minimum years"@en ,
+                            "ελάχιστα έτη"@el .
+
+
+###  http://example.org/job-ontology#hasCompanyDescription
+job:hasCompanyDescription rdf:type owl:DatatypeProperty ;
+                        rdfs:domain job:Company ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Describes the culture of the company" ;
+                        rdfs:label "περιγραφή εταιρείας"@el ,
+                                   "Company description" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/job-ontology#Benefit
+job:Benefit rdf:type owl:Class ;
+            rdfs:comment "Something offered by the company to employees"@en ;
+            rdfs:label "Benefit"@en ,
+                       "Παροχή"@el .
+
+
+###  http://example.org/job-ontology#CommunicationDetails
+job:CommunicationDetails rdf:type owl:Class ;
+                         rdfs:label "Στοιχεία επικοινωνίας"@el .
+
+
+###  http://example.org/job-ontology#Company
+job:Company rdf:type owl:Class ;
+            rdfs:comment "A business organization"@en ;
+            rdfs:label "Company"@en ,
+                       "Εταιρεία"@el .
+
+
+###  http://example.org/job-ontology#EducationRequirement
+job:EducationRequirement rdf:type owl:Class ;
+                         rdfs:subClassOf job:Requirement ;
+                         rdfs:label "Education"@en ,
+                                    "Εκπαίδευση"@el .
+
+
+###  http://example.org/job-ontology#ExperienceRequirement
+job:ExperienceRequirement rdf:type owl:Class ;
+                          rdfs:subClassOf job:Requirement ;
+                          rdfs:label "Work Experience"@en ,
+                                     "Προϋπηρεσία"@el .
+
+
+###  http://example.org/job-ontology#JobPosition
+job:JobPosition rdf:type owl:Class ;
+                rdfs:comment "A specific role or position within a company"@en ;
+                rdfs:label "Job Position"@en ,
+                           "Θέση Εργασίας"@el .
+
+
+###  http://example.org/job-ontology#JobResponsibility
+job:JobResponsibility rdf:type owl:Class ;
+                      rdfs:comment "A duty or task associated with a job position"@en ;
+                      rdfs:label "Job Responsibility"@en ,
+                                 "Αρμοδιότητα Θέσης"@el .
+
+
+###  http://example.org/job-ontology#LanguageSkill
+job:LanguageSkill rdf:type owl:Class ;
+                  rdfs:subClassOf job:Requirement ;
+                  rdfs:label "Language Skill"@en ,
+                             "Γλωσσική Γνώση"@el .
+
+
+###  http://example.org/job-ontology#Location
+job:Location rdf:type owl:Class ;
+             rdfs:comment "A geographical place"@en ;
+             rdfs:label "Location"@en ,
+                        "Τοποθεσία"@el .
+
+
+###  http://example.org/job-ontology#PersonalSkill
+job:PersonalSkill rdf:type owl:Class ;
+                  rdfs:subClassOf job:Requirement ;
+                  rdfs:label "Soft Skill"@en ,
+                             "Προσωπική Δεξιότητα"@el .
+
+
+###  http://example.org/job-ontology#Requirement
+job:Requirement rdf:type owl:Class ;
+                rdfs:comment "A necessary condition or qualification"@en ;
+                rdfs:label "Requirement"@en ,
+                           "Προϋποθέσεις"@el .
+
+
+###  http://example.org/job-ontology#Store
+job:Store rdf:type owl:Class ;
+          rdfs:comment "A retail establishment"@en ;
+          rdfs:label "Store"@en ,
+                     "Κατάστημα"@el .
+
+
+###  http://example.org/job-ontology#TechnicalSkill
+job:TechnicalSkill rdf:type owl:Class ;
+                   rdfs:subClassOf job:Requirement ;
+                   rdfs:label "Technical Skill"@en ,
+                              "Τεχνική Γνώση"@el .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#JobDetails
+<http://www.co-ode.org/ontologies/ont.owl#JobDetails> rdf:type owl:Class ;
+                                                      rdfs:label "Λεπτομέρειες θέσης"@el .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

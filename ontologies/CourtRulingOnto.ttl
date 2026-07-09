@@ -1,0 +1,247 @@
+@prefix : <https://example.org/legal-domain#LegalDomainOntology> .
+@prefix ld: <https://example.org/legal-domain#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://example.org/legal-domain#LegalDomainOntology> .
+
+<https://example.org/legal-domain#LegalDomainOntology> rdf:type owl:Ontology ;
+                                                        rdfs:label "Legal domain ontology for Greek criminal cassation decisions"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://example.org/legal-domain#feminineLabel
+ld:feminineLabel rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/legal-domain#genderNeutralLabel
+ld:genderNeutralLabel rdf:type owl:AnnotationProperty .
+
+
+###  https://example.org/legal-domain#masculineLabel
+ld:masculineLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#represents
+<http://www.co-ode.org/ontologies/ont.owl#represents> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain ld:Lawyer ;
+                                                      rdfs:range ld:Defendant .
+
+
+###  https://example.org/legal-domain#hasClerk
+ld:hasClerk rdf:type owl:ObjectProperty ;
+            rdfs:domain ld:Court ;
+            rdfs:range ld:Clerk ;
+            rdfs:label "έχει γραμματέα"@el .
+
+
+###  https://example.org/legal-domain#hasJudicialPanel
+ld:hasJudicialPanel rdf:type owl:ObjectProperty ;
+                    rdfs:domain ld:Court ;
+                    rdfs:range ld:JudicialPanel .
+
+
+###  https://example.org/legal-domain#hasPanelMember
+ld:hasPanelMember rdf:type owl:ObjectProperty ;
+                  owl:inverseOf ld:memberOfPanel ;
+                  rdfs:domain ld:JudicialPanel ;
+                  rdfs:range ld:Judge .
+
+
+###  https://example.org/legal-domain#hasPresidingJudge
+ld:hasPresidingJudge rdf:type owl:ObjectProperty ;
+                     rdfs:domain ld:JudicialPanel ;
+                     rdfs:range ld:Judge .
+
+
+###  https://example.org/legal-domain#hasProsecutor
+ld:hasProsecutor rdf:type owl:ObjectProperty ;
+                 rdfs:domain ld:Court ;
+                 rdfs:range ld:Prosecutor .
+
+
+###  https://example.org/legal-domain#hasPublicHearing
+ld:hasPublicHearing rdf:type owl:ObjectProperty ;
+                    rdfs:domain ld:Court ;
+                    rdfs:range ld:PublicHearing ;
+                    rdfs:label "έχει δημόσια συνεδρίαση"@el .
+
+
+###  https://example.org/legal-domain#hasRapporteur
+ld:hasRapporteur rdf:type owl:ObjectProperty ;
+                 rdfs:domain ld:JudicialPanel ;
+                 rdfs:range ld:RapporteurJudge .
+
+
+###  https://example.org/legal-domain#hasRepresentative
+ld:hasRepresentative rdf:type owl:ObjectProperty ;
+                     rdfs:domain ld:Defendant ;
+                     rdfs:range ld:Counsel .
+
+
+###  https://example.org/legal-domain#memberOfPanel
+ld:memberOfPanel rdf:type owl:ObjectProperty ;
+                 rdfs:domain ld:Judge ;
+                 rdfs:range ld:JudicialPanel .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://example.org/legal-domain#hasValue
+ld:hasValue rdf:type owl:DatatypeProperty ;
+            rdfs:domain owl:Thing ;
+            rdfs:range xsd:string ;
+            rdfs:label "έχει τιμή" .
+
+
+###  https://example.org/legal-domain#hearingDate
+ld:hearingDate rdf:type owl:DatatypeProperty ;
+               rdfs:domain ld:PublicHearing ;
+               rdfs:range xsd:date ;
+               rdfs:label "έχει ημερομηνία συνεδρίασης"@el .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://example.org/legal-domain#CivilClaimant
+ld:CivilClaimant rdf:type owl:Class ;
+                 rdfs:subClassOf ld:NaturalPerson ;
+                 rdfs:label "πολιτικώς ενάγων/ενάγουσα"@el .
+
+
+###  https://example.org/legal-domain#Clerk
+ld:Clerk rdf:type owl:Class ;
+         rdfs:subClassOf ld:LegalProfessional ;
+         rdfs:label "Γραμματέας"@el .
+
+
+###  https://example.org/legal-domain#Counsel
+ld:Counsel rdf:type owl:Class ;
+           rdfs:subClassOf ld:Lawyer ;
+           rdfs:label "πληρεξούσιος δικηγόρος"@el .
+
+
+###  https://example.org/legal-domain#Court
+ld:Court rdf:type owl:Class ;
+         rdfs:subClassOf ld:LegalEntity ;
+         rdfs:label "δικαστήριο"@el .
+
+
+###  https://example.org/legal-domain#CourtOfAppeal
+ld:CourtOfAppeal rdf:type owl:Class ;
+                 rdfs:subClassOf ld:Court ;
+                 rdfs:label "Εφετείο"@el .
+
+
+###  https://example.org/legal-domain#Defendant
+ld:Defendant rdf:type owl:Class ;
+             rdfs:subClassOf ld:NaturalPerson ;
+             rdfs:label "κατηγορούμενος/αναιρεσειών"@el .
+
+
+###  https://example.org/legal-domain#DeputyProsecutor
+ld:DeputyProsecutor rdf:type owl:Class ;
+                    rdfs:subClassOf ld:LegalProfessional ;
+                    rdfs:label "Αντεισαγγελέας"@el .
+
+
+###  https://example.org/legal-domain#FiveMemberCourtOfAppeal
+ld:FiveMemberCourtOfAppeal rdf:type owl:Class ;
+                           rdfs:subClassOf ld:CourtOfAppeal ;
+                           rdfs:label "Πενταμελές Εφετείο"@el .
+
+
+###  https://example.org/legal-domain#Judge
+ld:Judge rdf:type owl:Class ;
+         rdfs:subClassOf ld:LegalProfessional ;
+         rdfs:label "δικαστής"@el .
+
+
+###  https://example.org/legal-domain#JudicialPanel
+ld:JudicialPanel rdf:type owl:Class ;
+                 rdfs:label "σύνθεση δικαστηρίου"@el .
+
+
+###  https://example.org/legal-domain#Lawyer
+ld:Lawyer rdf:type owl:Class ;
+          rdfs:subClassOf ld:LegalProfessional ;
+          rdfs:label "δικηγόρος"@el .
+
+
+###  https://example.org/legal-domain#LegalEntity
+ld:LegalEntity rdf:type owl:Class ;
+               rdfs:label "νομική οντότητα"@el .
+
+
+###  https://example.org/legal-domain#LegalProfessional
+ld:LegalProfessional rdf:type owl:Class ;
+                     rdfs:subClassOf ld:NaturalPerson .
+
+
+###  https://example.org/legal-domain#MixedJuryCourtOfAppeal
+ld:MixedJuryCourtOfAppeal rdf:type owl:Class ;
+                          rdfs:subClassOf ld:CourtOfAppeal ;
+                          rdfs:label "Μικτό Ορκωτό Εφετείο"@el .
+
+
+###  https://example.org/legal-domain#NaturalPerson
+ld:NaturalPerson rdf:type owl:Class ;
+                 rdfs:label "φυσικό πρόσωπο"@el .
+
+
+###  https://example.org/legal-domain#Prosecutor
+ld:Prosecutor rdf:type owl:Class ;
+              rdfs:subClassOf ld:LegalProfessional ;
+              rdfs:label "Εισαγγελέας"@el .
+
+
+###  https://example.org/legal-domain#PublicHearing
+ld:PublicHearing rdf:type owl:Class ;
+                 rdfs:label "δημόσια συνεδρίαση"@el .
+
+
+###  https://example.org/legal-domain#RapporteurJudge
+ld:RapporteurJudge rdf:type owl:Class ;
+                   rdfs:subClassOf ld:Judge ;
+                   rdfs:label "Εισηγητής / Εισηγήτρια"@el .
+
+
+###  https://example.org/legal-domain#SupremeCourt
+ld:SupremeCourt rdf:type owl:Class ;
+                rdfs:subClassOf ld:Court ;
+                rdfs:label "Άρειος Πάγος"@el .
+
+
+###  https://example.org/legal-domain#SupremeCourtJudge
+ld:SupremeCourtJudge rdf:type owl:Class ;
+                     rdfs:subClassOf ld:Judge ;
+                     rdfs:label "Αρεοπαγίτης"@el .
+
+
+###  https://example.org/legal-domain#VicePresidentJudge
+ld:VicePresidentJudge rdf:type owl:Class ;
+                      rdfs:subClassOf ld:Judge ;
+                      rdfs:label "Αντιπρόεδρος"@el .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

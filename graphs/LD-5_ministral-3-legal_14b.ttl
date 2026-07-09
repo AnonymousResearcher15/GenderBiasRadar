@@ -1,0 +1,187 @@
+ld:MariaGaniatso a ld:SupremeCourtJudge ;
+    ld:hasValue "Μαρία Γκανιάτσου" ;
+    ld:memberOfPanel ld:panel ;
+    ld:sentenceId "0".
+
+ld:panel ld:hasPanelMember ld:maria_ganiatso .
+ld:public_hearing_2017_01_18 a ld:PublicHearing ;
+    ld:hearingDate "2017-01-18"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου" ;
+    ld:sentenceId "1".
+
+ld:konstantinos_paraskevidi a ld:DeputyProsecutor ;
+    ld:hasValue "Κωνσταντίνος Παρασκευαΐδης" ;
+    ld:sentenceId "1".
+
+ld:aikaterini_sitara a ld:Clerk ;
+    ld:hasValue "Αικατερίνη Σιταρά" ;
+    ld:sentenceId "1".
+
+ld:areios_pagos_z_criminal_chamber ld:hasPublicHearing ld:public_hearing_2017_01_18 ;
+    ld:hasProsecutor ld:konstantinos_paraskevidi ;
+    ld:hasClerk ld:aikaterini_sitara ;
+    ld:sentenceId "1".
+
+ld:kyriakos_ioannidi a ld:Defendant ;
+    ld:hasName "Κυριάκου Ιωαννίδη" ;
+    ld:hasRepresentative ld:nikolaos_alexopoulos ;
+    ld:sentenceId "1".
+
+ld:marios_skondras a ld:Defendant ;
+    ld:hasName "Μάριος Σκόνδρας" ;
+    ld:hasRepresentative ld:sotirios_spyriounis ;
+    ld:sentenceId "1".
+
+ld:nikolaos_alexopoulos a ld:Counsel ;
+    ld:hasValue "Νικόλαος Αλεξόπουλος" ;
+    ld:sentenceId "1".
+
+ld:sotirios_spyriounis a ld:Counsel ;
+    ld:hasValue "Σωτήριος Σπυριούνης" ;
+    ld:sentenceId "1".
+# EMPTY
+ld:areios_pagos_z_criminal_chamber ld:hasAppealDecision ld:appeal_decision_656_2015 ;
+    ld:sentenceId "2".
+
+ld:appeal_decision_656_2015 a ld:LegalEntity ;
+    ld:hasValue "Απόφαση 656/2015 του Πενταμελούς Εφετείου Αθηνών" ;
+    ld:sentenceId "2".
+ld:SotirisManos a ld:CivilClaimant ;
+    ld:hasName "Σωτήρη Μάνου" ;
+    ld:sentenceId "4".
+
+ld:SotirisManos ld:hasValue "Σωτήρης Μάνου του Στυλιανού, κάτοικος Χανίων" .
+ld:appeal_decision_656_2015 ld:hasAppealReason ld:appeal_reason_453_16 ;
+    ld:sentenceId "5".
+
+ld:appeal_reason_453_16 a ld:LegalEntity ;
+    ld:hasValue "Αίτηση αναίρεσης από 10 Ιουνίου 2015 και 30 Νοεμβρίου 2015" ;
+    ld:sentenceId "5".
+
+ld:appeal_reason_453_16 ld:hasDate "2015-06-10"^^xsd:date .
+ld:appeal_reason_453_16 ld:hasDate "2015-11-30"^^xsd:date .
+
+ld:five_member_court_of_athens a ld:FiveMemberCourtOfAppeal ;
+    ld:hasValue "Πενταμελές Εφετείο Αθηνών" ;
+    ld:sentenceId "5".
+
+ld:appeal_decision_656_2015 ld:issuedBy ld:five_member_court_of_athens .
+ld:areios_pagos_z_criminal_chamber ld:hasCounsel ld:counsels_of_appealants ;
+    ld:sentenceId "6".
+
+ld:counsels_of_appealants a ld:CounselGroup ;
+    ld:hasValue "Διορισθέντες δικηγόροι των αναιρεσειόντων" ;
+    ld:sentenceId "6".
+
+ld:areios_pagos_z_criminal_chamber ld:hasProsecutor ld:deputy_prosecutor_appeal_rejection ;
+    ld:sentenceId "6".
+
+ld:deputy_prosecutor_appeal_rejection a ld:DeputyProsecutor ;
+    ld:hasValue "Αντεισαγγελέας που πρότεινε απόρριψη αιτήσεων αναίρεσης" ;
+    ld:sentenceId "6".
+ld:kyriakos_ioannidi a ld:Defendant ;
+    ld:sentenceId "7".
+
+ld:appeal_request_2015_06_10 a ld:LegalEntity ;
+    ld:hasValue "Αίτηση αναιρέσεως του κατηγορουμένου Κυριάκου Ιωαννίδη του Γεωργίου" ;
+    ld:sentenceId "7".
+
+ld:kyriakos_ioannidi ld:hasAppealRequest ld:appeal_request_2015_06_10 .
+ld:appeal_request_2015_06_10 ld:hasDate "2015-06-10"^^xsd:date ;
+    ld:sentenceId "7".
+# EMPTY
+ld:appeal_decision_2_476 a ld:LegalEntity ;
+    ld:hasValue "Απόφαση 2/476" ;
+    ld:sentenceId "9".
+ld:appeal_decision_2_476 ld:hasParagraph "1, 509"^^xsd:string ;
+    ld:sentenceId "10".
+ld:appeal_decision_2_476 ld:hasParagraph "1, 510"^^xsd:string ;
+    ld:sentenceId "11".
+# EMPTY
+# EMPTY
+# EMPTY
+ld:appeal_decision_2_476 ld:hasParagraph "15, 513"^^xsd:string ;
+    ld:sentenceId "15".
+# EMPTY
+ld:appeal_request_2017_02_01 a ld:LegalEntity ;
+    ld:hasValue "Αίτηση αναιρέσεως" ;
+    ld:sentenceId "17".
+
+ld:appeal_request_2017_02_01 ld:hasArticle "2 του Κ.Ποιν.Δ."^^xsd:string ;
+    ld:sentenceId "17".
+ld:appeal_request_2015_06_10 ld:hasDate "2015-11-19"^^xsd:date ;
+    ld:sentenceId "18".
+
+ld:kyriakos_ioannidi ld:hasDeclaration ld:declaration_alikarnassou_prison ;
+    ld:sentenceId "18".
+
+ld:declaration_alikarnassou_prison a ld:LegalEntity ;
+    ld:hasValue "Δήλωση κρατούμενου αναιρεσείοντος στον Διευθυντή Καταστήματος Κράτησης Αλικαρνασσού" ;
+    ld:sentenceId "18".
+
+ld:declaration_alikarnassou_prison ld:hasDate "2015-06-30"^^xsd:date ;
+    ld:sentenceId "18".
+
+ld:appeal_request_2015_06_10 ld:hasReasonForAppeal "" ;
+    ld:sentenceId "18".
+# EMPTY
+ld:appeal_decision_656_2015 ld:hasDecisionDate "2015-03-13"^^xsd:date ;
+    ld:sentenceId "20".
+
+ld:appeal_decision_656_2015 ld:hasRejectionReason "Εκπρόθεσμη έφεση" ;
+    ld:sentenceId "20".
+
+ld:second_five_member_court_of_athens a ld:FiveMemberCourtOfAppeal ;
+    ld:hasValue "Β' Πενταμελές Εφετείο Αθηνών" ;
+    ld:sentenceId "20".
+
+ld:appeal_decision_656_2015 ld:issuedBy ld:second_five_member_court_of_athens .
+ld:appeal_decision_3741_2012 a ld:LegalEntity ;
+    ld:hasValue "Απόφαση 3741/2012" ;
+    ld:sentenceId "21".
+
+ld:three_member_court_of_thrace a ld:CourtOfAppeal ;
+    ld:hasValue "Τριμελές Εφετείο Θράκης" ;
+    ld:sentenceId "21".
+
+ld:appeal_decision_3741_2012 ld:issuedBy ld:three_member_court_of_thrace .
+# EMPTY
+ld:TakisPapadakis a ld:Defendant ;
+    ld:sentenceId "23".
+
+ld:appeal_request_2017_02_01 ld:hasAppealant ld:TakisPapadakis .
+ld:appeal_request_2017_02_01 ld:hasDate "2017-02-01"^^xsd:date ;
+    ld:sentenceId "23".
+ld:TakisPapadakis ld:hasConviction ld:conviction_2017_02_01 ;
+    ld:sentenceId "24".
+
+ld:conviction_2017_02_01 a ld:LegalEntity ;
+    ld:hasValue "Καταδίκη σε ποινή κάθειρξης 22 ετών και ΧΠ 2000 ευρώ για αρπαγή κ.λπ." ;
+    ld:sentenceId "24".
+
+ld:appeal_request_2017_02_01 ld:hasReasonForAppeal "Δεν ήταν δική μου ευθύνη που η έφεση έγινε εκπρόθεσμα, είναι ευθύνη του Κ.Κ." ;
+    ld:sentenceId "24".
+# EMPTY
+# EMPTY
+ld:appeal_request_2015_06_10 ld:hasLegalBasis "1 του Κ.Ποιν.Δ."^^xsd:string ;
+    ld:sentenceId "27".
+
+ld:appeal_request_2015_06_10 ld:hasReasonForAppeal "" ;
+    ld:sentenceId "27".
+ld:appeal_request_2017_02_01 ld:hasLegalBasis "1 του Κ.Ποιν.Δ."^^xsd:string ;
+    ld:sentenceId "28".
+
+ld:appeal_request_2017_02_01 ld:hasRejectionReason "Απαράδεκτη (άρθρο 513 Κ.Ποιν.Δ.)" ;
+    ld:sentenceId "28".
+# EMPTY
+# EMPTY
+ld:appeal_request_2015_11_30 a ld:LegalEntity ;
+    ld:hasValue "Αίτηση αναιρέσεως του κατηγορουμένου Μάριου Σκόνδρα του Σταμάτη" ;
+    ld:sentenceId "31".
+
+ld:marios_skondras ld:hasAppealRequest ld:appeal_request_2015_11_30 .
+ld:appeal_request_2015_11_30 ld:hasDate "2015-11-30"^^xsd:date ;
+    ld:sentenceId "31".
+
+ld:appeal_request_2015_11_30 ld:hasLegalBasis "322 του Π.Κ."^^xsd:string .
+# EMPTY

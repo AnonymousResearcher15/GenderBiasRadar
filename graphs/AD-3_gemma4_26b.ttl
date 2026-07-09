@@ -1,0 +1,67 @@
+job:SalesTeamLeaderPosition a job:JobPosition ;
+    job:hasTitle "Sales Team Leader" ;
+    job:hasResponsibility job:TeamLeadershipResponsibility ;
+    job:hasSentenceId 0 .
+
+job:TeamLeadershipResponsibility a job:JobResponsibility ;
+    job:hasValue "υπεύθυνος για την εύρυθμη λειτουργία και την καθοριστική καθοδήγηση της ομάδας τηλεφωνικών πωλήσεων κινητής και σταθερής τηλεφωνίας" ;
+    job:hasSentenceId 0 .
+job:TeamGuidanceResponsibility a job:JobResponsibility ;
+    job:hasValue "Καθοδήγηση και παρακολούθηση των εργασιών της ομάδας με σκοπό την επίτευξη ατομικών και ομαδικών στόχων" ;
+    job:hasSentenceId 1 .
+
+job:QualityAssuranceResponsibility a job:JobResponsibility ;
+    job:hasValue "Έλεγχος και διασέφαλιση της ποιότητας των κλήσεων" ;
+    job:hasSentenceId 1 .
+
+job:TrainingResponsibility a job:JobResponsibility ;
+    job:hasValue "Διεξαγωγή ατομικών και ομαδικών εκπαιδευτικών προγραμμάτων με σκοπό την ενίσχυση της ομάδας" ;
+    job:hasSentenceId 1 .
+
+job:ReportingResponsibility a job:JobResponsibility ;
+    job:hasValue "Δημιουργία αναφορών προς την ανώτερη Διοίκηση" ;
+    job:hasSentenceId 1 .
+
+job:SalesTeamLeaderPosition job:hasResponsibility job:TeamGuidanceResponsibility, job:QualityAssuranceResponsibility, job:TrainingResponsibility, job:ReportingResponsibility .
+
+job:CommunicationSkills a job:PersonalSkill ;
+    job:hasValue "Επικοινωνιακές & Διαπραγματευτικές ικανότητες" ;
+    job:hasSentenceId 1 .
+
+job:TeamworkSkill a job:PersonalSkill ;
+    job:hasValue "Ομαδικότητα" ;
+    job:hasSentenceId 1 .
+
+job:CustomerManagementSkill a job:PersonalSkill ;
+    job:hasValue "Ανθρωποκεντρική διαχείριση πελατών και παρακίνηση ομάδας" ;
+    job:hasSentenceId 1 .
+
+job:ComputerSkills a job:TechnicalSkill ;
+    job:hasValue "Άριστη χρήση Η/Υ (Excel, δημιουργία Reports)" ;
+    job:hasSentenceId 1 .
+
+job:EnglishLanguageSkill a job:LanguageSkill ;
+    job:hasValue "Άριστη γνώση Αγγλικών" ;
+    job:hasSentenceId 1 .
+
+job:SalesTeamLeaderPosition job:requires job:CommunicationSkills, job:TeamworkSkill, job:CustomerManagementSkill, job:ComputerSkills, job:EnglishLanguageSkill .
+
+job:SalaryPackageBenefit a job:Benefit ;
+    job:hasValue "Σταθερό πακέτο αποδοχών" ;
+    job:hasSentenceId 1 .
+
+job:InsuranceBenefit a job:Benefit ;
+    job:hasValue "Πλήρης ασφάλιση" ;
+    job:hasSentenceId 1 .
+
+job:PerformanceBonusBenefit a job:Benefit ;
+    job:hasValue "Bonus επίτευξης στόχου" ;
+    job:hasSentenceId 1 .
+
+job:WorkEnvironmentBenefit a job:Benefit ;
+    job:hasValue "Εξαιρετικό, Σύγχρονο και Ευχάριστο περιβάλλον εργασίας" ;
+    job:hasSentenceId 1 .
+
+job:EmployeeDiscountBenefit a job:Benefit ;
+    job:hasValue "Παροχή ειδικών υπαλληλικών εκπτώσεων σε πακέτα τηλεφωνίας" ;
+    job:hasSentenceId 1 .

@@ -1,0 +1,103 @@
+
+📄 'ΤΟ ΔΙΚΑΣΤΗΡΙΟ ΤΟΥ ΑΡΕΙΟΥ ΠΑΓΟΥ Ζ'ΠΟΙΝΙΚΟ ΤΜΗΜΑ Συγκροτήθηκε από τους Δικαστές: Γεώργιο Σακκά, Αντιπρόεδρο του Αρείου Πάγου, Δημήτριο Γεώργα, Δημήτριο Τζιούβα - Εισηγητή, Γεώργιο Παπαηλιάδη και Μαρία Γκανιάτσου, Αρεοπαγίτες.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0151 (NEUT)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 2
+Lexicographical Analysis:
+   → Biased words details:
+      • 'Εισηγητή': +0.0546 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+      • 'Αντιπρόεδρο': +0.0402 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'FEM'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: ΤΟ ΔΙΚΑΣΤΗΡΙΟ ΤΟΥ ΑΡΕΙΟΥ ΠΑΓΟΥ Ζ' ΠΟΙΝΙΚΟ ΤΜΗΜΑ Συγκροτήθηκε από τους/τις Δικαστές: Γεώργιο Σακκά, Αντιπρόεδρο του Αρείου Πάγου, Δημήτριο Γεώργα, Δημήτριο Τζιούβα - Εισηγητή, Γεώργιο Παπαηλιάδη και Μαρία Γκανιάτσου, Αρεοπαγίτες.
+📄 'Συνήλθε σε δημόσια συνεδρίαση στο Κατάστημά του στις 3 Μαΐου 2017, με την παρουσία του Αντεισαγγελέα του Αρείου Πάγου Κων/νου Παρασκευαϊδη (γιατί κωλύεται η Εισαγγελέας) και της Γραμματέως Αικατερίνης Σιταρά, για να δικάσει την αίτηση του αναιρεσείοντος - κατηγορουμένου Παναγιώτη Παπαδόπουλου, κατοίκου Κιλκίς και ήδη κρατούμενου στο Κατάστημα Κράτησης Κορυδαλλού, που εκπροσωπήθηκε από τον πληρεξούσιο δικηγόρο του Δημήτριο Φιλιππόπουλο, για αναίρεση της υπ'αριθ.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0667 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 3
+Lexicographical Analysis:
+   → Biased words details:
+      • 'δικηγόρο': +0.0454 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+      • 'κρατούμενου': +0.0326 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'NEUT'})- Type: VERB
+      • 'Αντεισαγγελέα': +0.0324 (MASC)- Lexicographical bias: ⚠️ YES (Direction: MASC)- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Συνήλθε σε δημόσια συνεδρίαση στο Κατάστημά του στις 3 Μαΐου 2017, με την παρουσία του Αντεισαγγελέα του Αρείου Πάγου Κωνσταντίνου Παρασκευαϊδη (γιατί κωλύεται η Εισαγγελέας) και της Γραμματέως Αικατερίνης Σιταρά, για να δικάσει την αίτηση του αναιρεσείοντος - κατηγορουμένου Παναγιώτη Παπαδόπουλου, κατοίκου Κιλκίς και ήδη κρατούμενου στο Κατάστημα Κράτησης Κορυδαλλού, που εκπροσωπήθηκε από τον πληρεξούσιο δικηγόρο του Δημήτριο Φιλιππούλο, για αναίρεση της υπ'αριθ.
+📄 '582/2015 αποφάσεως του Πενταμελούς Εφετείου Πειραιά.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0247 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Το Πενταμελές Εφετείο Πειραιά με την ως άνω απόφασή του διέταξε όσα λεπτομερώς αναφέρονται σ' αυτή, και o αναιρεσείων - κατηγορούμενος ζητεί την αναίρεση αυτής, για τους λόγους που αναφέρονται στην από 8 Μαρτίου 2016 αίτησή του αναιρέσεως, η οποία καταχωρίστηκε στο οικείο πινάκιο με τον αριθμό 12316.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0179 (NEUT)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Αφού άκουσε τον πληρεξούσιο δικηγόρο του αναιρεσείοντος, που ζήτησε όσα αναφέρονται στα σχετικά πρακτικά και τον Αντεισαγγελέα, που πρότεινε να απορριφθεί η προκείμενη αίτηση αναίρεσης.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0571 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 2
+Lexicographical Analysis:
+   → Biased words details:
+      • 'δικηγόρο': +0.0454 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+      • 'Αντεισαγγελέα': +0.0324 (MASC)- Lexicographical bias: ⚠️ YES (Direction: MASC)- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Αφού άκουσε τον πληρεξούσιο δικηγόρο του αναιρεσείοντος, που ζήτησε όσα αναφέρονται στα σχετικά πρακτικά και την Αντεισαγγελέα, που πρότεινε να απορριφθεί η προκείμενη αίτηση αναίρεσης.
+📄 'ΤΟ ΔΙΚΑΣΤΗΡΙΟ ΤΟΥ ΑΡΕΙΟΥ ΠΑΓΟΥ Ζ'ΠΟΙΝΙΚΟ ΤΜΗΜΑ Συγκροτήθηκε από τους Δικαστές: Γεώργιο Σακκά, Αντιπρόεδρο του Αρείου Πάγου, Δημήτριο Γεώργα, Δημήτριο Τζιούβα - Εισηγητή, Γεώργιο Παπαηλιάδη και Μαρία Γκανιάτσου, Αρεοπαγίτες.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0151 (NEUT)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 2
+Lexicographical Analysis:
+   → Biased words details:
+      • 'Εισηγητή': +0.0546 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+      • 'Αντιπρόεδρο': +0.0402 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'FEM'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: ΤΟ ΔΙΚΑΣΤΗΡΙΟ ΤΟΥ ΑΡΕΙΟΥ ΠΑΓΟΥ Ζ'ΠΟΙΝΙΚΟ ΤΜΗΜΑ Συγκροτήθηκε από τους Δικαστές: Γεώργιο Σακκά, Αντιπρόεδρο του Αρείου Πάγου, Δημήτριο Γεώργα, Δημήτριο Τζιούβα - Εισηγητή, Γεώργιο Παπαηλιάδη και Μαρία Γκανιάτσου, Αρεοπαγίτες.
+📄 'Συνήλθε σε δημόσια συνεδρίαση στο Κατάστημά του στις 3 Μαΐου 2017, με την παρουσία του Αντεισαγγελέα του Αρείου Πάγου Κων/νου Παρασκευαϊδη (γιατί κωλύεται η Εισαγγελέας) και της Γραμματέως Αικατερίνης Σιταρά, για να δικάσει την αίτηση του αναιρεσείοντος - κατηγορουμένου Παναγιώτη Παπαδόπουλου, κατοίκου Κιλκίς και ήδη κρατούμενου στο Κατάστημα Κράτησης Κορυδαλλού, που εκπροσωπήθηκε από τον πληρεξούσιο δικηγόρο του Δημήτριο Φιλιππόπουλο, για αναίρεση της υπ'αριθ.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0667 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 3
+Lexicographical Analysis:
+   → Biased words details:
+      • 'δικηγόρο': +0.0454 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+      • 'κρατούμενου': +0.0326 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'NEUT'})- Type: VERB
+      • 'Αντεισαγγελέα': +0.0324 (MASC)- Lexicographical bias: ⚠️ YES (Direction: MASC)- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Συνήλθε σε δημόσια συνεδρίαση στο Κατάστημά του στις 3 Μαΐου 2017, με την παρουσία του Αντεισαγγελέα του Αρείου Πάγου Κων/νου Παρασκευαϊδη (γιατί κωλύεται ο/η Εισαγγελέας) και της Γραμματέως Αικατερίνης Σιταρά, για να δικάσει την αίτηση του αναιρεσείοντος - κατηγορουμένου Παναγιώτη Παπαδόπουλου, κατοίκου Κιλκίς και ήδη κρατούμενου στο Κατάστημα Κράτησης Κορυδαλλού, που εκπροσωπήθηκε από τον πληρεξούσιο δικηγόρο του Δημήτριο Φιλιππούλο, για αναίρεση της υπ'αριθ.
+📄 '582/2015 αποφάσεως του Πενταμελούς Εφετείου Πειραιά.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0247 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Το Πενταμελές Εφετείο Πειραιά με την ως άνω απόφασή του διέταξε όσα λεπτομερώς αναφέρονται σ' αυτή, και o αναιρεσείων - κατηγορούμενος ζητεί την αναίρεση αυτής, για τους λόγους που αναφέρονται στην από 8 Μαρτίου 2016 αίτησή του αναιρέσεως, η οποία καταχωρίστηκε στο οικείο πινάκιο με τον αριθμό 12316.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0179 (NEUT)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Αφού άκουσε τον πληρεξούσιο δικηγόρο του αναιρεσείοντος, που ζήτησε όσα αναφέρονται στα σχετικά πρακτικά και τον Αντεισαγγελέα, που πρότεινε να απορριφθεί η προκείμενη αίτηση αναίρεσης.'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0571 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 2
+Lexicographical Analysis:
+   → Biased words details:
+      • 'δικηγόρο': +0.0454 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+      • 'Αντεισαγγελέα': +0.0324 (MASC)- Lexicographical bias: ⚠️ YES (Direction: MASC)- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Αφού άκουσε τον/την πληρεξούσιο δικηγόρο του αναιρεσείοντος, που ζήτησε όσα αναφέρονται στα σχετικά πρακτικά και τον/την Αντεισαγγελέα, που πρότεινε να απορριφθεί η προκείμενη αίτηση αναίρεσης.

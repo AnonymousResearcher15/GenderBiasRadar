@@ -1,0 +1,167 @@
+job:CalderaGroup a job:Company ;
+    job:hasName "Ο ξενοδοχειακός όμιλος Caldera Group" ;
+    job:searchFor job:WaiterPosition, job:WaitressPosition ;
+    job:hasSentenceId 0 .
+
+job:WaiterPosition a job:JobPosition ;
+    job:hasTitle "Σερβιτόρος" ;
+    job:offeredBy job:CalderaGroup ;
+    job:hasSentenceId 0 .
+
+job:WaitressPosition a job:JobPosition ;
+    job:hasTitle "Σερβιτόρα" ;
+    job:offeredBy job:CalderaGroup ;
+    job:hasSentenceId 0 ;
+
+job:ExperienceInSimilarRole a job:ExperienceRequirement ;
+    job:appliesTo "Προϋπηρεσία σε αντίστοιχη θέση" ;
+    job:minimumYears 1 ;  # Assuming minimum years is implied by "experience," defaulting to 1 if unspecified
+    job:hasSentenceId 0 .
+
+job:EnglishLanguageProficiency a job:LanguageSkill ;
+    job:hasValue "Καλή γνώση αγγλικών" ;
+    job:hasSentenceId 0 ;
+
+job:WaiterPosition job:requires job:ExperienceInSimilarRole, job:EnglishLanguageProficiency .
+job:WaitressPosition job:requires job:ExperienceInSimilarRole, job:EnglishLanguageProficiency .
+job:AdditionalForeignLanguage a gr:ΠρόσθετοΠρόσόν ;
+    a job:PersonalSkill ;
+    job:hasValue "Η γνώση μίας επιπλέον ξένης γλώσσας θα θεωρηθεί πρόσθετο προσόν" ;
+    job:hasSentenceId 1 .
+
+job:WaiterPosition job:requires job:AdditionalForeignLanguage .
+job:WaitressPosition job:requires job:AdditionalForeignLanguage .
+job:OrderSystemKnowledge a job:TechnicalSkill ;
+    job:hasValue "Γνώση συστημάτων παραγγελιοληψίας / PDA" ;
+    job:hasSentenceId 2 .
+
+job:ProfessionalAppearanceBehavior a job:PersonalSkill ;
+    job:hasValue "Επαγγελματική εμφάνιση και συμπεριφορά" ;
+    job:hasSentenceId 2 .
+
+job:CompetitiveSalaryPackage a job:Benefit ;
+    job:hasValue "Ανταγωνιστικό πακέτο αποδοχών αναλόγως προσόντων, ασφάλιση και όλα τα νόμιμα επιδόματα" ;
+    job:hasSentenceId 2 .
+
+job:AccommodationForNonCreteEmployees a job:Benefit ;
+    job:hasValue "Δυνατότητα διαμονής για τους συνεργάτες εκτός Κρήτης" ;
+    job:hasSentenceId 2 .
+
+job:NutritionBenefit a job:Benefit ;
+    job:hasValue "Διατροφή" ;
+    job:hasSentenceId 2 .
+
+job:ExcellentWorkEnvironment a job:Benefit ;
+    job:hasValue "Άριστο περιβάλλον εργασίας" ;
+    job:hasSentenceId 2 .
+
+job:ContinuousTraining a job:Benefit ;
+    job:hasValue "Συνεχή εκπαίδευση και επιμόρφωση" ;
+    job:hasSentenceId 2 .
+
+job:CareerGrowthOpportunity a job:Benefit ;
+    job:hasValue "Δυνατότητα εξέλιξης σε έναν δυναμικό και αναπτυσσόμενο όμιλο" ;
+    job:hasSentenceId 2 .
+
+job:CalderaGroup job:offersBenifit job:CompetitiveSalaryPackage, job:AccommodationForNonCreteEmployees,
+    job:NutritionBenefit, job:ExcellentWorkEnvironment, job:ContinuousTraining, job:CareerGrowthOpportunity .
+
+job:WaiterPosition job:requires job:OrderSystemKnowledge, job:ProfessionalAppearanceBehavior .
+job:WaitressPosition job:requires job:OrderSystemKnowledge, job:ProfessionalAppearanceBehavior .
+
+job:CommunicationDetailsForInterview a job:CommunicationDetails ;
+    job:hasValue "Μετά τη συλλογή και την αξιολόγηση όλων των βιογραφικών, η Διοίκηση θα επικοινωνήσει με τους υποψηφίους που πληρούν τις προϋποθέσεις της θέσης προκειμένου να πραγματοποιηθεί προσωπική συνέντευξη." ;
+    job:hasSentenceId 2 .
+
+job:CalderaGroup job:hasCommunicationDetails job:CommunicationDetailsForInterview .
+job:CalderaGroup a job:Company ;
+    job:hasName "Ξενοδοχειακός Όμιλος Caldera Group" ;
+    job:searchFor job:WaiterPosition, job:WaitressPosition ;
+    job:hasSentenceId 0 .
+
+job:WaiterPosition a job:JobPosition ;
+    job:hasTitle "Σερβιτόρος" ;
+    job:offeredBy job:CalderaGroup ;
+    job:requires job:EnglishLanguageKnowledge, job:ExperienceRequirementForWaiter ;
+    job:hasSentenceId 0 .
+
+job:WaitressPosition a job:JobPosition ;
+    job:hasTitle "Σερβιτόρα" ;
+    job:offeredBy job:CalderaGroup ;
+    job:requires job:EnglishLanguageKnowledge, job:ExperienceRequirementForWaitress ;
+    job:hasSentenceId 0 .
+
+job:EnglishLanguageKnowledge a job:LanguageSkill ;
+    job:hasValue "Καλή γνώση αγγλικών" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 0 .
+
+job:ExperienceRequirementForWaiter a job:ExperienceRequirement ;
+    job:hasValue "Προϋπηρεσία σε αντίστοιχη θέση" ;
+    job:appliesTo "Σερβιτόρος" ;
+    job:minimumYears 1 ;
+    job:hasSentenceId 0 .
+
+job:ExperienceRequirementForWaitress a job:ExperienceRequirement ;
+    job:hasValue "Προϋπηρεσία σε αντίστοιχη θέση" ;
+    job:appliesTo "Σερβιτόρα" ;
+    job:minimumYears 1 ;
+    job:hasSentenceId 0 .
+job:AdditionalLanguageSkill a job:LanguageSkill ;
+    job:hasValue "Η γνώση μίας επιπλέον ξένης γλώσσας θα θεωρηθεί πρόσθετο προσόν" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 1 .
+
+job:WaiterPosition job:requires job:AdditionalLanguageSkill .
+job:WaitressPosition job:requires job:AdditionalLanguageSkill .
+job:OrderSystemKnowledge a job:TechnicalSkill ;
+    job:hasValue "Γνώση συστημάτων παραγγελιοληψίας / PDA" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 2 .
+
+job:ProfessionalAppearanceBehavior a job:PersonalSkill ;
+    job:hasValue "Επαγγελματική εμφάνιση και συμπεριφορά" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 2 .
+
+job:CompetitiveSalaryPackage a job:Benefit ;
+    job:hasValue "Ανταγωνιστικό πακέτο αποδοχών αναλόγως προσόντων" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 2 .
+
+job:InsuranceAndLegalAllowances a job:Benefit ;
+    job:hasValue "ασφάλιση και όλα τα νόμιμα επιδόματα" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 2 .
+
+job:AccommodationPossibility a job:Benefit ;
+    job:hasValue "Δυνατότητα διαμονής για τους συνεργάτες εκτός Κρήτης" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 2 .
+
+job:NutritionBenefit a job:Benefit ;
+    job:hasValue "Διατροφή" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 2 .
+
+job:ExcellentWorkEnvironment a job:Benefit ;
+    job:hasValue "Άριστο περιβάλλον εργασίας" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 2 .
+
+job:ContinuousTraining a job:Benefit ;
+    job:hasValue "Συνεχή εκπαίδευση και επιμόρφωση" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 2 .
+
+job:CareerGrowth a job:Benefit ;
+    job:hasValue "Δυνατότητα εξέλιξης σε έναν δυναμικό και αναπτυσσόμενο όμιλο" ;
+    job:appliesTo "Σερβιτόρος/Σερβιτόρα" ;
+    job:hasSentenceId 2 .
+
+job:CalderaGroup job:offersBenifit job:CompetitiveSalaryPackage, job:InsuranceAndLegalAllowances,
+    job:AccommodationPossibility, job:NutritionBenefit, job:ExcellentWorkEnvironment,
+    job:ContinuousTraining, job:CareerGrowth .
+
+job:WaiterPosition job:requires job:OrderSystemKnowledge, job:ProfessionalAppearanceBehavior .
+job:WaitressPosition job:requires job:OrderSystemKnowledge, job:ProfessionalAppearanceBehavior .

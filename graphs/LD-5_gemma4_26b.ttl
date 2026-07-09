@@ -1,0 +1,91 @@
+ld:areios_pagos_z_criminal_chamber a ld:SupremeCourt ;
+    ld:hasValue "Άρειος Πάγος, Ζ' Ποινικό Τμήμα" ;
+    ld:hasJudicialPanel ld:panel_0 ;
+    ld:hasSentenceId 0 .
+
+ld:panel_0 a ld:JudicialPanel ;
+    ld:hasValue "Σύνθεση για τη δημόσια συνεδρίαση" ;
+    ld:hasPanelMember ld:georgios_sakkas, ld:vasileios_kapelouzos, ld:dimitrios_georgas, ld:dimitrios_tziouvas, ld:maria_gganiatsou ;
+    ld:hasRapporteur ld:dimitrios_tziouvas ;
+    ld:hasSentenceId 0 .
+
+ld:georgios_sakkas a ld:VicePresidentJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Σακκάς" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0 .
+
+ld:vasileios_kapelouzos a ld:SupremeCourtJudge ;
+    ld:hasValue "Βασίλειος Καπελούζος" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0 .
+
+ld:dimitrios_georgas a ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Γεώργας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0 .
+
+ld:dimitrios_tziouvas a ld:RapporteurJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Τζιούβας" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0 .
+
+ld:maria_gganiatsou a ld:SupremeCourtJudge ;
+    ld:hasValue "Μαρία Γκανιάτσου" ;
+    ld:memberOfPanel ld:panel_0 ;
+    ld:hasSentenceId 0 .
+
+ld:areios_pagos_z_criminal_chamber ld:hasProsecutor ld:konstantinos_paraskevaidis ;
+    ld:hasClerk ld:aikaterini_sitara ;
+    ld:hasPublicHearing ld:public_hearing_2017_01_18 ;
+    ld:hasSentenceId 1 .
+
+ld:konstantinos_paraskevaidis a ld:DeputyProsecutor ;
+    ld:hasValue "Κωνσταντίνος Παρασκευαΐδης" ;
+    ld:hasSentenceId 1 .
+
+ld:aikaterini_sitara a ld:Clerk ;
+    ld:hasValue "Αικατερίνη Σιταρά" ;
+    ld:hasSentenceId 1 .
+
+ld:public_hearing_2017_01_18 a ld:PublicHearing ;
+    ld:hearingDate "2017-01-18"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου" ;
+    ld:hasSentenceId 1 .
+
+ld:kyriakos_ioannidis a ld:Defendant ;
+    ld:hasValue "Κυριάκος Ιωαννίδης" ;
+    ld:hasRepresentative ld:nikolaos_alexopoulos ;
+    ld:hasSentenceId 1 .
+
+ld:nikolaos_alexopoulos a ld:Counsel ;
+    ld:hasValue "Νικόλαος Αλεξόπουλος" ;
+    ld:hasSentenceId 1 .
+
+ld:marios_skondras a ld:Defendant ;
+    ld:hasValue "Μάριος Σκόνδρας" ;
+    ld:hasRepresentative ld:sotirios_spyriounis ;
+    ld:hasSentenceId 1 .
+
+ld:sotirios_spyriounis a ld:Counsel ;
+    ld:hasValue "Σωτήριος Σπυριούνης" ;
+    ld:hasSentenceId 1 .
+
+ld:sotiris_manou a ld:CivilClaimant ;
+    ld:hasValue "Σωτήρης Μάνου" ;
+    ld:hasSentenceId 4 .
+
+ld:five_member_court_of_appeal_athens a ld:FiveMemberCourtOfAppeal ;
+    ld:hasValue "Πενταμελές Εφετείο Αθηνών" ;
+    ld:hasSentenceId 5 .
+
+ld:appeal_request_453_16 a ld:LegalEntity ;
+    ld:hasValue "Αίτηση αναιρέσεως αριθμός 453/16" ;
+    ld:hasSentenceId 5 .
+
+ld:kyriakos_ioannidis ld:hasSentenceId 18 .
+
+ld:marios_skondras ld:hasSentenceId 31 .
+
+ld:appeal_request_2015_11_30 a ld:LegalEntity ;
+    ld:hasValue "Αίτηση αναιρέσεως από 30 Νοεμβρίου 2015" ;
+    ld:hasSentenceId 31 .

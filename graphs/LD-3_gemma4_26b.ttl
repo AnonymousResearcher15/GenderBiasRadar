@@ -1,0 +1,116 @@
+ld:areios_pagos_z_criminal_chamber a ld:SupremeCourt ;
+    ld:hasValue "Άρειος Πάγος, Ζ' Ποινικό Τμήμα" ;
+    ld:hasJudicialPanel ld:panel ;
+    ld:hasSentenceId 0.
+
+ld:panel a ld:JudicialPanel ;
+    ld:hasValue "Σύνθεση για τη δημόσια συνεδρίαση της 1ης Φεβρουαρίου 2017" ;
+    ld:hasPanelMember ld:georgios_sakkas ,
+                      ld:vasileios_kapelouzos ,
+                      ld:dimitrios_georgas ,
+                      ld:dimitrios_tziouvas ,
+                      ld:georgios_papailiadis ;
+    ld:hasRapporteur ld:dimitrios_tziouvas ;
+    ld:hasSentenceId 0.
+
+ld:georgios_sakkas a ld:VicePresidentJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Σακκάς" ;
+    ld:memberOfPanel ld:panel ;
+    ld:hasSentenceId 0.
+
+ld:vasileios_kapelouzos a ld:SupremeCourtJudge ;
+    ld:hasValue "Βασίλειος Καπελούζος" ;
+    ld:memberOfPanel ld:panel ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_georgas a ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Γεώργας" ;
+    ld:memberOfPanel ld:panel ;
+    ld:hasSentenceId 0.
+
+ld:dimitrios_tziouvas a ld:RapporteurJudge, ld:SupremeCourtJudge ;
+    ld:hasValue "Δημήτριος Τζιούβας" ;
+    ld:memberOfPanel ld:panel ;
+    ld:hasSentenceId 0.
+
+ld:georgios_papailiadis a ld:SupremeCourtJudge ;
+    ld:hasValue "Γεώργιος Παπαηλιάδης" ;
+    ld:memberOfPanel ld:panel ;
+    ld:hasSentenceId 0.
+ld:areios_pagos_z_criminal_chamber ld:hasProsecutor ld:panagiotis_karagiannis ;
+    ld:hasClerk ld:aikaterini_sitara ;
+    ld:hasPublicHearing ld:public_hearing_2017_02_15 ;
+    ld:hasSentenceId 1.
+
+ld:panagiotis_karagiannis a ld:DeputyProsecutor ;
+    ld:hasValue "Παναγιώτης Καραγιάννης" ;
+    ld:hasSentenceId 1.
+
+ld:aikaterini_sitara a ld:Clerk ;
+    ld:hasValue "Αικατερίνη Σιταρά" ;
+    ld:hasSentenceId 1.
+
+ld:public_hearing_2017_02_15 a ld:PublicHearing ;
+    ld:hearingDate "2017-02-15"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου" ;
+    ld:hasSentenceId 1.
+
+ld:konstantinos_roikos a ld:Defendant ;
+    ld:hasValue "Κωνσταντίνος Ρόικος" ;
+    ld:hasRepresentative ld:georgios_mouloukos ;
+    ld:hasSentenceId 1.
+
+ld:georgios_mouloukos a ld:Counsel ;
+    ld:hasValue "Γεώργιος Μπουλούκος" ;
+    ld:hasSentenceId 1.
+ld:athens_court_of_appeal_three_member a ld:CourtOfAppeal ;
+    ld:hasValue "Τριμελές Εφετείο Αθηνών" ;
+    ld:hasSentenceId 2.
+
+ld:decision_5206_2016 a ld:LegalEntity ;
+    ld:hasValue "5206/2016" ;
+    ld:hasSentenceId 2.
+
+ld:athens_court_of_appeal_three_member ld:hasValue "Απόφαση 5206/2016" ;
+    ld:hasSentenceId 2.
+ld:ioannis_kontakis a ld:CivilClaimant ;
+    ld:hasValue "Ιωάννης Κοντάκης" ;
+    ld:hasSentenceId 3.
+ld:defendant_from_sentence_4 a ld:Defendant ;
+    ld:hasValue "αναιρεσείων-κατηγορούμενος" ;
+    ld:hasSentenceId 4.
+
+ld:application_123_2016 a ld:LegalEntity ;
+    ld:hasValue "123/2016" ;
+    ld:hasSentenceId 4.
+
+ld:application_date_october_2016 a ld:LegalEntity ;
+    ld:hasValue "19 Οκτωβρίου 2016" ;
+    ld:hasSentenceId 4.
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY

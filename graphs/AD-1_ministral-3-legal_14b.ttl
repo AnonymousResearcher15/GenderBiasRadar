@@ -1,0 +1,147 @@
+job:Books24Gr a job:Company ;
+    job:hasName "Βooks24.gr" ;
+    job:searchFor job:EshopManagerPosition ;
+    job:hasSentenceId 0 .
+
+job:EshopManagerPosition a job:JobPosition ;
+    job:hasTitle "Υπεύθυνο του Ηλεκτρονικού Βιβλιοπωλείου (e-shop)" ;
+    job:offeredBy job:Books24Gr ;
+    job:hasSentenceId 0 .
+job:EshopManagerPosition job:requires job:OrganizationalEfficiencyRequirement, job:CustomerServiceEffectiveness .
+job:OrganizationalEfficiencyRequirement a job:JobResponsibility ;
+    job:hasValue "Η θέση επιβάλλει την οργάνωση και αποδοτικότητα του ηλεκτρονικού καταστήματος" ;
+    job:appliesTo "e-shop" ;
+    job:hasSentenceId 1 .
+
+job:CustomerServiceEffectiveness a job:JobResponsibility ;
+    job:hasValue "σε συνδυασμό με την αποτελεσματική ικανοποίηση και εξυπηρέτηση των πελατών" ;
+    job:appliesTo "πελάτες" ;
+    job:hasSentenceId 1 .
+job:EshopSupervisionAndManagement a job:JobResponsibility ;
+    job:hasValue "Εποπτεία και διαχείριση e-shop (καταχώριση προϊόντων, ενημέρωση προϊόντων)" ;
+    job:appliesTo "e-shop" ;
+    job:hasSentenceId 2 .
+
+job:EshopManagerPosition job:hasResponsibility job:EshopSupervisionAndManagement .
+job:CustomerCommunication a job:JobResponsibility ;
+    job:hasValue "Αποτελεσματική επικοινωνία με τους πελάτες" ;
+    job:appliesTo "πελάτες" ;
+    job:hasSentenceId 3 .
+
+job:PhoneOrderHandling a job:JobResponsibility ;
+    job:hasValue "τηλεφωνικές παραγγελίες" ;
+    job:appliesTo "παραγγελίες" ;
+    job:hasSentenceId 3 .
+
+job:OrderManagementAndExecution a job:JobResponsibility ;
+    job:hasValue "διαχείριση και διεκπεραίωση των παραγγελιών (δημιουργία προσφορών, έλεγχος αποστολής – πληρωμής παραγγελιών)" ;
+    job:appliesTo "παραγγελίες" ;
+    job:hasSentenceId 3 .
+
+job:EshopManagerPosition job:hasResponsibility job:CustomerCommunication, job:PhoneOrderHandling, job:OrderManagementAndExecution .
+job:DailyOrderManagement a job:JobResponsibility ;
+    job:hasValue "Καθημερινή διαχείριση παραγγελιών (τιμολόγηση, συσκευασία, προμήθεια)" ;
+    job:appliesTo "παραγγελίες" ;
+    job:hasSentenceId 4 .
+
+job:EshopManagerPosition job:hasResponsibility job:DailyOrderManagement .
+job:CustomerServiceExperienceCreation a job:JobResponsibility ;
+    job:hasValue "Δημιουργία εξαιρετικών εμπειριών εξυπηρέτησης και πώλησης" ;
+    job:appliesTo "εξυπηρέτηση και πώληση" ;
+    job:hasSentenceId 5 .
+
+job:EshopManagerPosition job:hasResponsibility job:CustomerServiceExperienceCreation .
+job:ERPSystemManagement a job:JobResponsibility ;
+    job:hasValue "Χειρισμός εμπορικού προγράμματος ERP" ;
+    job:appliesTo "εμπορικό πρόγραμμα ERP" ;
+    job:hasSentenceId 6 .
+
+job:SupplierCommunicationAndOrderCoordination a job:JobResponsibility ;
+    job:hasValue "Επικοινωνία με προμηθευτές και συντονισμός παραγγελιών" ;
+    job:appliesTo "παραγγελίες, προμηθευτές" ;
+    job:hasSentenceId 6 .
+
+job:EshopManagerPosition job:hasResponsibility job:ERPSystemManagement, job:SupplierCommunicationAndOrderCoordination .
+job:AthenaioApothesma a job:EducationRequirement ;
+    job:hasValue "Προφίλ υποψηφίου: Απόφοιτος ΑΕΙ" ;
+    job:appliesTo "ΑΕΙ" ;
+    job:hasSentenceId 7 .
+job:EshopManagerPosition job:requires job:AthenaioApothesma .
+job:PreviousSimilarWorkExperience a job:ExperienceRequirement ;
+    job:hasValue "Προηγούμενη αντίστοιχη εργασιακή εμπειρία ως Υπεύθυνος Ηλεκτρονικού Καταστήματος" ;
+    job:appliesTo "Υπεύθυνος Ηλεκτρονικού Καταστήματος" ;
+    job:minimumYears 0 ;
+    job:hasSentenceId 8 .
+
+job:EshopManagerPosition job:requires job:PreviousSimilarWorkExperience .
+job:PreviousBookstoreExperience a job:ExperienceRequirement ;
+    job:hasValue "Προηγούμενη προϋπηρεσία σε βιβλιοπωλείο θα αξιολογηθεί" ;
+    job:appliesTo "βιβλιοπωλείο" ;
+    job:minimumYears 0 ;
+    job:hasSentenceId 9 .
+
+job:EshopManagerPosition job:requires job:PreviousBookstoreExperience .
+job:CustomerCenteredCommunicationSkills a job:PersonalSkill ;
+    job:hasValue "Ανεπτυγμένες επικοινωνιακές ικανότητες με πελατοκεντρική αντίληψη" ;
+    job:hasSentenceId 10 .
+job:EshopManagerPosition job:requires job:CustomerCenteredCommunicationSkills .
+job:Professionalism a gr:PersonalSkill ;
+    gr:hasValue "Επαγγελματισμός" ;
+    gr:hasSentenceId 11 .
+
+job:Responsibility a gr:PersonalSkill ;
+    gr:hasValue "υπευθυνότητα" ;
+    gr:hasSentenceId 11 .
+
+job:Consistency a gr:PersonalSkill ;
+    gr:hasValue "συνέπεια" ;
+    gr:hasSentenceId 11 .
+
+job:AttentionToDetail a gr:PersonalSkill ;
+    gr:hasValue "προσοχή στη λεπτομέρεια" ;
+    gr:hasSentenceId 11 .
+
+job:EshopManagerPosition job:requires job:Professionalism, job:Responsibility, job:Consistency, job:AttentionToDetail .
+job:AnglikonGnoseon a job:LanguageSkill ;
+    job:hasValue "Άριστη γνώση αγγλικών (Proficiency)" ;
+    job:hasSentenceId 12 .
+job:EshopManagerPosition job:requires job:AnglikonGnoseon .
+job:MagentoGnoseis a gr:TechnicalSkill ;
+    gr:hasValue "Πολύ καλή γνώση Magento είναι επιθυμητή" ;
+    gr:hasSentenceId 13 .
+job:EshopManagerPosition job:requires job:MagentoGnoseis .
+job:ERPProgramHandling a gr:TechnicalSkill ;
+    gr:hasValue "Γνώση χειρισμού ERP προγραμμάτων" ;
+    gr:hasSentenceId 14 .
+job:SoftonePreference a gr:TechnicalSkill ;
+    gr:hasValue "κατά προτίμηση Softone" ;
+    gr:appliesTo "ERP προγράμματα" ;
+    gr:hasSentenceId 14 .
+
+job:EshopManagerPosition job:requires job:ERPProgramHandling, job:SoftonePreference .
+gr:StratiotikesYpochreoseisEkpliromenes a gr:ExperienceRequirement ;
+    gr:hasValue "Στρατιωτικές υποχρεώσεις εκπληρωμένες (για τους άνδρες)" ;
+    gr:appliesTo "άνδρες" ;
+    gr:minimumYears 0 ;
+    gr:hasSentenceId 15 .
+job:PlirisApascholeisis a job:Benefit ;
+    job:hasValue "Πλήρης απασχόληση" ;
+    job:hasSentenceId 16 .
+job:EucharistosErgasiakosPerivallon a job:Benefit ;
+    job:hasValue "Ευχάριστο εργασιακό περιβάλλον" ;
+    job:hasSentenceId 16 .
+
+job:Books24Gr job:offersBenifit job:PlirisApascholeisis, job:EucharistosErgasiakosPerivallon .
+job:AntagonistikonPaketoStatheronApodochon a job:Benefit ;
+    job:hasValue "Ανταγωνιστικό πακέτο σταθερών αποδοχών, αναλόγως προσόντων" ;
+    job:hasSentenceId 17 .
+job:Books24Gr job:offersBenifit job:AntagonistikonPaketoStatheronApodochon .
+job:EmailCommunication a job:CommunicationDetails ;
+    job:hasValue "info@books24.gr" ;
+    job:hasSentenceId 18 .
+job:Books24Gr job:hasCommunicationDetails job:EmailCommunication .
+job:CurriculumVitaeSubmissionRequirement a job:JobResponsibility ;
+    job:hasValue "Στείλε μας το βιογραφικό σας με την ένδειξη «Υπεύθυνος Ηλεκτρονικού Καταστήματος»" ;
+    job:appliesTo "βιογραφικό, Υπεύθυνος Ηλεκτρονικού Καταστήματος" ;
+    job:hasSentenceId 18 .
+job:EshopManagerPosition job:requires job:CurriculumVitaeSubmissionRequirement .

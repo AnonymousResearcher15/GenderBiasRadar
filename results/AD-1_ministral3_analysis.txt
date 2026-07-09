@@ -1,0 +1,249 @@
+
+📄 'Βooks24.gr'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0025 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Υπεύθυνο του Ηλεκτρονικού Βιβλιοπωλείου (e-shop)'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0452 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'Υπεύθυνο': +0.0388 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'NEUT'})- Type: ADJ
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Υπεύθυνος/η του Ηλεκτρονικού Βιβλιοπωλείου (e-shop)
+
+📄 'Προηγούμενη αντίστοιχη εργασιακή εμπειρία ως Υπεύθυνος Ηλεκτρονικού Καταστήματος θα θεωρηθεί σημαντικό προσόν'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0055 (NEUT)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'Υπεύθυνος': +0.0526 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: ADJ
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Προηγούμενη αντίστοιχη εργασιακή εμπειρία ως Υπεύθυνος/η Ηλεκτρονικού Καταστήματος θα θεωρηθεί σημαντικό προσόν.
+
+📄 'Δημιουργία εξαιρετικών εμπειριών εξυπηρέτησης και πώλησης'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0268 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Προηγούμενη προϋπηρεσία σε βιβλιοπωλείο θα αξιολογηθεί'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0022 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'υπευθυνότητα'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0494 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'πελατοκεντρική αντίληψη'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0304 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Στρατιωτικές υποχρεώσεις εκπληρωμένες (για τους άνδρες)'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0798 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'άνδρες': +0.1096 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Στρατιωτικές υποχρεώσεις εκπληρωμένες (για τα άτομα που τις έχουν)
+
+📄 'Ανεπτυγμένες επικοινωνιακές ικανότητες'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0300 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Ανταγωνιστικό πακέτο σταθερών αποδοχών, αναλόγως προσόντων'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0051 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'Ανταγωνιστικό': +0.0216 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'NEUT'})- Type: ADJ
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label:     Ανταγωνιστικό πακέτο σταθερών αποδοχών, ανάλογα με τα προσόντα.
+
+📄 'Πολύ καλή γνώση Magento είναι επιθυμητή'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0082 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'αποτελεσματική ικανοποίηση και εξυπηρέτηση των πελατών'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0266 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'πελατών': +0.0289 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: αποτελεσματική ικανοποίηση και εξυπηρέτηση των πελατών/τριών
+
+📄 'κατά προτίμηση Softone'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0092 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Επικοινωνία με προμηθευτές και συντονισμό παραγγελιών'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0419 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 2
+Lexicographical Analysis:
+   → Biased words details:
+      • 'προμηθευτές': +0.0342 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+      • 'συντονισμό': +0.0211 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Επικοινωνία με προμηθευτές και προμηθεύτριες και συντονισμός παραγγελιών από την/ο υπεύθυνη/ο.
+
+📄 'Εποπτεία και διαχείριση e-shop (καταχώριση προϊόντων, ενημέρωση προϊόντων)'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0136 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Ευχάριστο εργασιακό περιβάλλον'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0018 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Πλήρης απασχόληση'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0153 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Καθημερινή διαχείριση παραγγελιών (τιμολόγηση, συσκευασία, προμήθεια)'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0171 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Επαγγελματισμός'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0339 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'Επαγγελματισμός': +0.0339 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Επαγγελματισμός και επαγγελματικός πειθαρχία.
+
+📄 'Η θέση επιβάλλει την οργάνωση και αποδοτικότητα του ηλεκτρονικού καταστήματος'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0180 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Άριστη γνώση αγγλικών (Proficiency)'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0147 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'προσοχή στη λεπτομέρεια'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0028 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Χειρισμός εμπορικού προγράμματος ERP'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0322 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'συνέπεια'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0059 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'info@books24.gr'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0025 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+
+📄 'Αποτελεσματική επικοινωνία με τους πελάτες, τηλεφωνικές παραγγελίες, διαχείριση και διεκπεραίωση των παραγγελιών (δημιουργία προσφορών, έλεγχος αποστολής – πληρωμής παραγγελιών)'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0272 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'πελάτες': +0.0249 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'FEM'})- Type: NOUN, ADJ
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label:     Αποτελεσματική επικοινωνία με τους/τις πελάτες, τηλεφωνικές παραγγελίες, διαχείριση και διεκπεραίωση των παραγγελιών (δημιουργία προσφορών, έλεγχος αποστολής – πληρωμής παραγγελιών).
+
+📄 'Απόφοιτος ΑΕΙ'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0235 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO

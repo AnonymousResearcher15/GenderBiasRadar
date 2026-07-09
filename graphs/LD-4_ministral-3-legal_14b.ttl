@@ -1,0 +1,139 @@
+ld:MariaGaniatso a ld:SupremeCourtJudge ;
+    ld:hasValue "Μαρία Γκανιάτσου" ;
+    ld:memberOfPanel ld:panel ;
+    ld:sentenceId "0".
+ld:public_hearing_2017_03_15 a ld:PublicHearing ;
+    ld:hearingDate "2017-03-15"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου στις 15 Μαρτίου 2017" ;
+    ld:sentenceId "1".
+
+ld:AthanasiosAkritidi a ld:DeputyProsecutor ;
+    ld:hasValue "Αθανάσιος Ακριτίδης" ;
+    ld:sentenceId "1".
+
+ld:PanagiotisAgalu a ld:Defendant ;
+    ld:hasName "Παναγιώτα Αγάλου" ;
+    ld:hasRepresentative ld:georgios_kakarantzas ;
+    ld:sentenceId "1".
+
+ld:GeorgiosKakarantzas a ld:Counsel ;
+    ld:hasValue "Γεώργιος Κακαράντζας" ;
+    ld:sentenceId "1".
+ld:LarissaFiveMemberCourtOfAppealDecision391_2015 a ld:CourtOfAppeal ;
+    ld:hasValue "Πενταμελές Εφετείο Λάρισας" ;
+    ld:sentenceId "2".
+
+ld:decision_391_2015 a ld:LegalEntity ;
+    ld:hasValue "απόφαση υπ' αριθ. 391/2015 του Πενταμελούς Εφετείου Λάρισας" ;
+    ld:sentenceId "2".
+ld:tez_ae a ld:LegalEntity ;
+    ld:hasValue "ΤΕΖ Α.Ε." ;
+    ld:sentenceId "2".
+ld:tez_ae ld:hasRepresentative ld:ilias_tompaidis ;
+    ld:sentenceId "4".
+
+ld:ilias_tompaidis a ld:Counsel ;
+    ld:hasValue "Ηλίας Τομπαΐδης" ;
+    ld:sentenceId "4".
+ld:LarissaFiveMemberCourtOfAppealDecision391_2015 ld:hasDecision ld:decision_391_2015 ;
+    ld:sentenceId "5".
+
+ld:decision_391_2015 ld:isSubjectToAppeal ld:appeal_request_191_17 ;
+    ld:sentenceId "5".
+
+ld:appeal_request_191_17 a ld:LegalEntity ;
+    ld:hasValue "αίτηση αναιρέσεως υπ' αριθ. 191/17" ;
+    ld:submissionDate "2016-12-30"^^xsd:date ;
+    ld:sentenceId "5".
+
+ld:PanagiotisAgalu ld:hasAppeal ld:appeal_request_191_17 ;
+    ld:sentenceId "5".
+ld:public_hearing_2017_03_15 ld:hasCounsel ld:georgios_kakarantzas ;
+    ld:sentenceId "6".
+
+ld:public_hearing_2017_03_15 ld:hasDeputyProsecutor ld:AthanasiosAkritidi ;
+    ld:sentenceId "6".
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+# EMPTY
+ld:N_Article2a a ld:LegalEntity ;
+    ld:hasValue "2α" ;
+    ld:sentenceId "12".
+
+ld:N_Article2b a ld:LegalEntity ;
+    ld:hasValue "β του Ν." ;
+    ld:sentenceId "12".
+# EMPTY
+ld:N_Article1b a ld:LegalEntity ;
+    ld:hasValue "1β'" ;
+    ld:sentenceId "14".
+
+ld:N_Paragraph a ld:LegalEntity ;
+    ld:hasValue "και παρ." ;
+    ld:sentenceId "14".
+ld:N_Article2aPrime a ld:LegalEntity ;
+    ld:hasValue "2α'" ;
+    ld:sentenceId "15" .
+ld:Article4055_2012 a ld:LegalEntity ;
+    ld:hasValue "άρθρο 4055/2012" ;
+    ld:sentenceId "16".
+
+ld:ForgedDocumentCrime a ld:LegalEntity ;
+    ld:hasValue "πλαστογραφία και χρήση πλαστού ή νοθευμένου εγγράφου" ;
+    ld:sentenceId "16".
+
+ld:Article4055_2012 ld:concerns ld:ForgedDocumentCrime ;
+    ld:sentenceId "16".
+
+ld:IntendedBenefit a ld:LegalEntity ;
+    ld:hasValue "περιουσιακό όφελος" ;
+    ld:sentenceId "16".
+
+ld:Article4055_2012 ld:requires ld:IntendedBenefit ;
+    ld:sentenceId "16".
+
+ld:HarmToThirdParty a ld:LegalEntity ;
+    ld:hasValue "βλάβη τρίτου" ;
+    ld:sentenceId "16".
+
+ld:Article4055_2012 ld:implies ld:HarmToThirdParty ;
+    ld:sentenceId "16".
+
+ld:ImprisonmentPenalty a ld:LegalEntity ;
+    ld:hasValue "κάθειρξη μέχρι δέκα ετών" ;
+    ld:sentenceId "16".
+
+ld:Article4055_2012 ld:prescribes ld:ImprisonmentPenalty ;
+    ld:sentenceId "16".
+
+ld:MinimumHarmThreshold a ld:LegalEntity ;
+    ld:hasValue "ζημία ή όφελος" ;
+    ld:sentenceId "16".
+
+ld:Article4055_2012 ld:appliesIf ld:MinimumHarmThreshold ;
+    ld:sentenceId "16".
+
+ld:AmountThreshold a ld:LegalEntity ;
+    ld:hasValue "120.000 ευρώ"^^xsd:string ;
+    ld:sentenceId "16".
+
+ld:Article4055_2012 ld:minimumFinancialImpact ld:AmountThreshold ;
+    ld:sentenceId "16".
+ld:Article4055_2012 ld:professionalOrHabitualOffenderPenalty ld:ImprisonmentPenalty ;
+    ld:sentenceId "17".
+
+ld:ProfessionalOrHabitualOffense a ld:LegalEntity ;
+    ld:hasValue "πλαστογραφίες κατ' επάγγελμα ή κατά συνήθεια" ;
+    ld:sentenceId "17".
+
+ld:Article4055_2012 ld:appliesTo ld:ProfessionalOrHabitualOffense ;
+    ld:sentenceId "17".
+
+ld:FinancialThreshold30k a ld:LegalEntity ;
+    ld:hasValue "30.000 ευρώ"^^xsd:string ;
+    ld:sentenceId "17".
+
+ld:Article4055_2012 ld:minimumFinancialImpactForProfessionalOffense ld:FinancialThreshold30k ;
+    ld:sentenceId "17".

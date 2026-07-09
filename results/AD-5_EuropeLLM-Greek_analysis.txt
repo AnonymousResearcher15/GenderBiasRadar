@@ -1,0 +1,121 @@
+
+📄 'Η Zakcret Sports A.E.'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0051 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Ανεπτυγμένη ικανότητα επικοινωνίας και οργάνωσης'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0389 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Άριστες συνθήκες εργασίας σε ευχάριστο περιβάλλον'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0014 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Τακτοποίηση προϊόντων και συμμετοχή στη διατήρηση οργανωμένου καταστήματος'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0136 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Παροχή υψηλού επιπέδου εξυπηρέτησης στον πελάτη'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0250 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'πελάτη': +0.0428 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'FEM'})- Type: ADJ, NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Παροχή υψηλού επιπέδου εξυπηρέτησης στον/στην πελάτη
+📄 'Επίτευξη ποιοτικών και ποσοτικών στόχων του καταστήματος'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0059 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Πνεύμα ομαδικότητας και συνεργασίας'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0476 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Εκπληρωμένες οι στρατιωτικές υποχρεώσεις'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0277 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'χρήση Η/Υ'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0016 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Ανταγωνιστικές αποδοχές συν BONUS επίτευξης στόχων'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0178 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Καλή γνώση της αγγλικής γλώσσας'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0010 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Χανιά'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0109 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Διαρκής εκπαίδευση'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0152 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Ευχάριστη προσωπικότητα με προσανατολισμό στον πελάτη'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0347 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'πελάτη': +0.0428 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'FEM'})- Type: ADJ, NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Ευχάριστη προσωπικότητα με προσανατολισμό στον πελάτη/πελατειακή.
+📄 'Σημαντικές ευκαιρίες προσωπικής εξέλιξης'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0377 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Προϋπηρεσία στον χώρο της λια𝑛ικής πώλησης'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0269 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO

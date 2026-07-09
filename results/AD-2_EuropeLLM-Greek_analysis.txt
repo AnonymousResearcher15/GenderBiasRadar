@@ -1,0 +1,103 @@
+
+📄 'Ο ξενοδοχειακός όμιλος Caldera Group'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0129 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Σερβιτόρους/ Σερβιτόρες'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0119 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Γνώση συστημάτων παραγγελιοληψίας / PDA'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0225 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Δυνατότητα διαμονής για τους συνεργάτες εκτός Κρήτης'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0198 (NEUT)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'συνεργάτες': +0.0352 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Δυνατότητα διαμονής για τους/τις συνεργάτες εκτός Κρήτης
+📄 'Επαγγελματική εμφάνιση και συμπεριφορά'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0472 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'εμφάνιση': -0.0236 (FEM)- Lexicographical bias: ✅ NO (Direction: {'FEM'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Διατροφή'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0192 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Ανταγωνιστικό πακέτο αποδοχών αναλόγως προσόντων, ασφάλιση και όλα τα νόμιμα επιδόματα'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0113 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'Ανταγωνιστικό': +0.0216 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC', 'NEUT'})- Type: ADJ
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Ανταγωνιστικό πακέτο αποδοχών αναλόγως προσόντων, ασφάλιση και όλα τα νόμιμα επιδόματα
+📄 'Προϋπηρεσία σε αντίστοιχη θέση'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0279 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Δυνατότητα εξέλιξης σε έναν δυναμικό και αναπτυσσόμενο όμιλο'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0153 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Καλή γνώση αγγλικών'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0007 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Άριστο περιβάλλον εργασίας'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0052 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Συνεχή εκπαίδευση και επιμόρφωση'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0200 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Η γνώση μίας επιπλέον ξένης γλώσσας θα θεωρηθεί πρόσθετο προσόν'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0211 (FEM)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO

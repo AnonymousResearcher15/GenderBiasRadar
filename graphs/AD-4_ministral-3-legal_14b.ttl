@@ -1,0 +1,66 @@
+job:SalesCareerPosition a job:JobPosition ;
+    job:hasTitle "Πωλήσεις" ;
+    job:hasSentenceId 0 .
+
+job:NoExperienceRequirement a job:ExperienceRequirement ;
+    job:appliesTo "προϋπηρεσία" ;
+    job:minimumYears 0 ;
+    job:hasSentenceId 0 .
+
+job:SalesCareerPosition job:requires job:NoExperienceRequirement .
+job:OurCompany a job:Company ;
+    job:hasName "Η εταιρεία μας" ;
+    job:hasSentenceId 1 .
+
+job:HumanCenteredSalesDepartmentPosition a job:JobPosition ;
+    job:hasTitle "ανθρωποκεντρικές πωλήσεις" ;
+    job:offeredBy job:OurCompany ;
+    job:locatedAt job:ThessalonikiLocation ;
+    job:hasSentenceId 1 .
+
+job:ThessalonikiLocation a job:Location ;
+    job:hasValue "Θεσσαλονίκη" ;
+    job:hasSentenceId 1 .
+job:SalesCareerPosition job:requires job:ThessalonikiResidencyRequirement .
+job:ThessalonikiResidencyRequirement a job:Requirement ;
+    job:appliesTo "μόνιμος κάτοικος Θεσσαλονίκης" ;
+    job:hasSentenceId 2 .
+
+job:SalesCareerPosition job:requires job:ContinuousDevelopmentInSales .
+job:ContinuousDevelopmentInSales a job:JobResponsibility ;
+    job:hasValue "στοχεύεις στη συνεχή εξέλιξη και ανέλιξη στον κλάδο της πώλησης" ;
+    job:hasSentenceId 2 .
+
+job:OurCompany job:searchFor job:SalesCareerPosition .
+job:TeamworkSkill a job:PersonalSkill ;
+    job:hasValue "Ικανότητα συνεργασίας και ομαδικού πνεύματος" ;
+    job:hasSentenceId 3 .
+
+job:OrganizationalCommunicationSkills a job:PersonalSkill ;
+    job:hasValue "Οργανωτικές και επικοινωνιακές δεξιότητες" ;
+    job:hasSentenceId 3 .
+
+job:ProfessionalMindset a job:PersonalSkill ;
+    job:hasValue "Επαγγελματική νοοτροπία" ;
+    job:hasSentenceId 3 .
+
+job:ImmediateAvailability a job:Requirement ;
+    job:appliesTo "διαθεσιμότητα" ;
+    job:hasValue "Άμεση διαθεσιμότητα" ;
+    job:hasSentenceId 3 .
+
+job:ModernWorkEnvironmentBenefit a job:Benefit ;
+    job:hasValue "Σύγχρονο και ευχάριστο περιβάλλον" ;
+    job:hasSentenceId 3 .
+
+job:FullTrainingAndWorkshopsBenefit a job:Benefit ;
+    job:hasValue "Πλήρη εκπαίδευση και τακτικά workshops" ;
+    job:hasSentenceId 3 .
+
+job:DirectCareerGrowthOpportunityBenefit a job:Benefit ;
+    job:hasValue "Ευκαιρίες άμεσης εξέλιξης" ;
+    job:hasSentenceId 3 .
+
+job:SalesCareerPosition job:requires job:TeamworkSkill, job:OrganizationalCommunicationSkills, job:ProfessionalMindset, job:ImmediateAvailability .
+job:OurCompany job:offersBenifit job:ModernWorkEnvironmentBenefit, job:FullTrainingAndWorkshopsBenefit, job:DirectCareerGrowthOpportunityBenefit .
+

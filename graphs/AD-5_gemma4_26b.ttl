@@ -1,0 +1,74 @@
+job:ZakcretSportsAE a job:Company ;
+    job:hasName "Η Zakcret Sports A.E." ;
+    job:hasSentenceId 0 .
+job:ZakcretSportsAE job:searchFor job:SalesAssociatePosition ;
+    job:hasSentenceId 1 .
+
+job:SalesAssociatePosition a job:JobPosition ;
+    job:offeredBy job:ZakcretSportsAE ;
+    job:locatedAt job:ChaniaLocation ;
+    job:hasSentenceId 1 .
+
+job:ChaniaLocation a job:Location ;
+    job:hasValue "Χανιά" ;
+    job:hasSentenceId 1 .
+job:SalesAssociatePosition job:hasResponsibility job:CustomerServiceResponsibility, job:ProductArrangementResponsibility, job:TargetAchievementResponsibility ;
+    job:requires job:RetailExperienceRequirement, job:EnglishLanguageSkill, job:ComputerSkillsRequirement, job:MilitaryServiceRequirement, job:TeamworkSkill, job:CommunicationSkill, job:CustomerOrientationSkill .
+
+job:CustomerServiceResponsibility a job:JobResponsibility ;
+    job:hasValue "Παροχή υψηλού επιπέδου εξυπηρέτησης στον πελάτη" ;
+    job:hasSentenceId 2 .
+
+job:ProductArrangementResponsibility a job:JobResponsibility ;
+    job:hasValue "Τακτοποίηση προϊόντων και συμμετοχή στη διατήρηση οργανωμένου καταστήματος" ;
+    job:hasSentenceId 2 .
+
+job:TargetAchievementResponsibility a job:JobResponsibility ;
+    job:hasValue "Επίτευξη ποιοτικών και ποσοτικών στόχων του καταστήματος" ;
+    job:hasSentenceId 2 .
+
+job:RetailExperienceRequirement a job:ExperienceRequirement ;
+    job:hasValue "Προϋπηρεσία στον χώρο της λια𝑛ικής πώλησης" ;
+    job:hasSentenceId 2 .
+
+job:EnglishLanguageSkill a job:LanguageSkill ;
+    job:hasValue "Καλή γνώση της αγγλικής γλώσσας" ;
+    job:hasSentenceId 2 .
+
+job:ComputerSkillsRequirement a job:TechnicalSkill ;
+    job:hasValue "χρήση Η/Υ" ;
+    job:hasSentenceId 2 .
+
+job:MilitaryServiceRequirement a job:Requirement ;
+    job:hasValue "Εκπληρωμένες οι στρατιωτικές υποχρεώσεις" ;
+    job:hasSentenceId 2 .
+
+job:TeamworkSkill a job:PersonalSkill ;
+    job:hasValue "Πνεύμα ομαδικότητας και συνεργασίας" ;
+    job:hasSentenceId 2 .
+
+job:CommunicationSkill a job:PersonalSkill ;
+    job:hasValue "Ανεπτυγμένη ικανότητα επικοινωνίας και οργάνωσης" ;
+    job:hasSentenceId 2 .
+
+job:CustomerOrientationSkill a job:PersonalSkill ;
+    job:hasValue "Ευχάριστη προσωπικότητα με προσανατολισμό στον πελάτη" ;
+    job:hasSentenceId 2 .
+
+job:ZakcretSportsAE job:offersBenifit job:CompetitiveSalaryBenefit, job:GrowthOpportunityBenefit, job:WorkingConditionsBenefit, job:TrainingBenefit .
+
+job:CompetitiveSalaryBenefit a job:Benefit ;
+    job:hasValue "Ανταγωνιστικές αποδοχές συν BONUS επίτευξης στόχων" ;
+    job:hasSentenceId 2 .
+
+job:GrowthOpportunityBenefit a job:Benefit ;
+    job:hasValue "Σημαντικές ευκαιρίες προσωπικής εξέλιξης" ;
+    job:hasSentenceId 2 .
+
+job:WorkingConditionsBenefit a job:Benefit ;
+    job:hasValue "Άριστες συνθήκες εργασίας σε ευχάριστο περιβάλλον" ;
+    job:hasSentenceId 2 .
+
+job:TrainingBenefit a job:Benefit ;
+    job:hasValue "Διαρκής εκπαίδευση" ;
+    job:hasSentenceId 2 .

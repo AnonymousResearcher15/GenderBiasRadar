@@ -1,0 +1,57 @@
+job:CalderaGroup a job:Company ;
+    job:hasName "Ο ξενοδοχειακός όμιλος Caldera Group" ;
+    job:searchFor job:WaiterPosition ;
+    job:hasSentenceId 0 .
+
+job:WaiterPosition a job:JobPosition ;
+    job:hasTitle "Σερβιτόρους/ Σερβιτόρες" ;
+    job:offeredBy job:CalderaGroup ;
+    job:requires job:ExperienceRequirementWaiter, job:EnglishLanguageSkill ;
+    job:hasSentenceId 0 .
+
+job:ExperienceRequirementWaiter a job:ExperienceRequirement ;
+    job:hasValue "Προϋπηρεσία σε αντίστοιχη θέση" ;
+    job:hasSentenceId 0 .
+
+job:EnglishLanguageSkill a job:LanguageSkill ;
+    job:hasValue "Καλή γνώση αγγλικών" ;
+    job:hasSentenceId 0 .
+job:WaiterPosition job:requires job:AdditionalLanguageSkill .
+job:AdditionalLanguageSkill a job:LanguageSkill ;
+    job:hasValue "Η γνώση μίας επιπλέον ξένης γλώσσας θα θεωρηθεί πρόσθετο προσόν" ;
+    job:hasSentenceId 1 .
+job:OrderingSystemsSkill a job:TechnicalSkill ;
+    job:hasValue "Γνώση συστημάτων παραγγελιοληψίας / PDA" ;
+    job:hasSentenceId 2 .
+
+job:ProfessionalAppearance a job:PersonalSkill ;
+    job:hasValue "Επαγγελματική εμφάνιση και συμπεριφορά" ;
+    job:hasSentenceId 2 .
+
+job:WaiterPosition job:requires job:OrderingSystemsSkill, job:ProfessionalAppearance .
+
+job:CompetitivePackage a job:Benefit ;
+    job:hasValue "Ανταγωνιστικό πακέτο αποδοχών αναλόγως προσόντων, ασφάλιση και όλα τα νόμιμα επιδόματα" ;
+    job:hasSentenceId 2 .
+
+job:AccommodationOpportunity a job:Benefit ;
+    job:hasValue "Δυνατότητα διαμονής για τους συνεργάτες εκτός Κρήτης" ;
+    job:hasSentenceId 2 .
+
+job:MealBenefit a job:Benefit ;
+    job:hasValue "Διατροφή" ;
+    job:hasSentenceId 2 .
+
+job:WorkEnvironmentBenefit a job:Benefit ;
+    job:hasValue "Άριστο περιβάλλον εργασίας" ;
+    job:hasSentenceId 2 .
+
+job:TrainingBenefit a job:Benefit ;
+    job:hasValue "Συνεχή εκπαίδευση και επιμόρφωση" ;
+    job:hasSentenceId 2 .
+
+job:CareerAdvancementBenefit a job:Benefit ;
+    job:hasValue "Δυνατότητα εξέλιξης σε έναν δυναμικό και αναπτυσσόμενο όμιλο" ;
+    job:hasSentenceId 2 .
+
+job:CalderaGroup job:offersBenifit job:CompetitivePackage, job:AccommodationOpportunity, job:MealBenefit, job:WorkEnvironmentBenefit, job:TrainingBenefit, job:CareerAdvancementBenefit .

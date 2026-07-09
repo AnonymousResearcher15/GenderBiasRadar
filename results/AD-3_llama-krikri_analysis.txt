@@ -1,0 +1,141 @@
+
+📄 'Sales Team Leader'
+Word Embeddings Bias Analysis:
+   → Overall bias: -0.0025 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Δημιουργία αναφορών προς την ανώτερη Διοίκηση'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0429 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Bonus επίτευξης στόχου'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0239 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Καθοδήγηση και παρακολούθηση των εργασιών της ομάδας με σκοπό την επίτευξη ατομικών και ομαδικών στόχων'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0280 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Διεξαγωγή ατομικών και ομαδικών εκπαιδευτικών προγραμμάτων με σκοπό την ενίσχυση της ομάδας'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0208 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'εκπαιδευτικών': +0.0278 (MASC)- Lexicographical bias: ✅ NO (Direction: {'FEM', 'MASC', 'NEUT'})- Type: ADJ
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Διορθωμένο κείμενο:
+Διεξαγωγή ατομικών και ομαδικών εκπαιδευτικών προγραμμάτων με σκοπό την ενίσχυση της ομάδας
+
+Σημείωση: Το επίθετο "εκπαιδευτικών" είναι ουδέτερο ως προς το φύλο και δεν χρειάζεται διόρθωση. Η λέξη αναφέρεται σε προγράμματα που απευθύνονται σε εκπαιδευόμενους/ες, ανεξαρτήτως φύλου.
+📄 'Ανθρωποκεντρική διαχείριση πελατών και παρακίνηση ομάδας'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0627 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'πελατών': +0.0289 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: NOUN
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: ΕΞΟΔΟΣ:
+Ανθρωποκεντρική διαχείριση ανθρώπων και παρακίνηση ομάδας
+📄 'υπεύθυνος για την εύρυθμη λειτουργία και την καθοριστική καθοδήγηση της ομάδας τηλεφωνικών πωλήσεων κινητής και σταθερής τηλεφωνίας'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0565 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 2
+Lexicographical Analysis:
+   → Biased words details:
+      • 'υπεύθυνος': +0.0683 (MASC)- Lexicographical bias: ✅ NO (Direction: {'MASC'})- Type: ADJ
+      • 'τηλεφωνικών': +0.0248 (MASC)- Lexicographical bias: ✅ NO (Direction: {'FEM', 'MASC', 'NEUT'})- Type: ADJ
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: Διορθωμένο κείμενο:
+υπεύθυνη/ος για την εύρυθμη λειτουργία και την καθοριστική καθοδήγηση της ομάδας τηλεφωνικών πωλήσεων κινητής και σταθερής τηλεφωνίας
+
+Εξήγηση διόρθωσης:
+- Η λέξη "υπεύθυνος" είναι ουδέτερη ως προς το φύλο και μπορεί να χρησιμοποιηθεί χωρίς πρόβλημα
+- Η αλλαγή του άρθρου σε "την/τον" διατηρεί τη γραμματική ορθότητα ενώ επιτρέπει μελλοντική συμπερίληψη (gender-neutral)
+- Διατηρείται η αρχική σύνταξη για να μην αλλοιωθεί το νόημα του κειμένου
+📄 'Ομαδικότητα'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0132 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Έλεγχος και διασέφαλιση της ποιότητας των κλήσεων'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0070 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Επικοινωνιακές & Διαπραγματευτικές ικανότητες'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0394 (MASC)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Άριστη γνώση Αγγλικών'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0140 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Πλήρης ασφάλιση'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0082 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Σταθερό πακέτο αποδοχών'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0032 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Εξαιρετικό, Σύγχρονο και Ευχάριστο περιβάλλον εργασίας'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0111 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO
+📄 'Παροχή ειδικών υπαλληλικών εκπτώσεων σε πακέτα τηλεφωνίας'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0137 (NEUT)
+   → Is biased: ⚠️ YES
+   → Biased words detected: 1
+Lexicographical Analysis:
+   → Biased words details:
+      • 'ειδικών': +0.0374 (MASC)- Lexicographical bias: ✅ NO (Direction: {'FEM', 'MASC', 'NEUT'})- Type: ADJ
+Final Assessment:
+   → Overall bias: ⚠️ YES
+   → Corrected label: ΕΞΟΔΟΣ:
+Παροχή υπαλλήλων με ειδικές εκπτώσεις σε πακέτα τηλεφωνίας
+📄 'Άριστη χρήση Η/Υ (Excel, δημιουργία Reports)'
+Word Embeddings Bias Analysis:
+   → Overall bias: +0.0042 (NEUT)
+   → Is biased: ✅ NO
+   → Biased words detected: 0
+Final Assessment:
+   → Overall bias: ✅ NO

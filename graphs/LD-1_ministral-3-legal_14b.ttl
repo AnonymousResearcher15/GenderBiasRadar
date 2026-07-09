@@ -1,0 +1,61 @@
+ld:MariaGaniatso a ld:SupremeCourtJudge ;
+    ld:hasValue "Μαρία Γκανιάτσου" ;
+    ld:memberOfPanel ld:panel ;
+    ld:sentenceId "0".
+ld:public_hearing_2017_05_03 a ld:PublicHearing ;
+    ld:hearingDate "2017-05-03"^^xsd:date ;
+    ld:hasValue "Δημόσια συνεδρίαση στο Κατάστημα του Αρείου Πάγου στις 3 Μαΐου 2017" ;
+    ld:sentenceId "1".
+
+ld:KonstantinosParaskevidis a ld:DeputyProsecutor ;
+    ld:hasValue "Κωνσταντίνος Παρασκευαϊδης" ;
+    ld:sentenceId "1".
+
+ld:PanagiotisPapadopoulos a ld:Defendant, ld:Detainee ;
+    ld:hasName "Παναγιώτης Παπαδόπουλος" ;
+    ld:detainedAt ld:korydallos_detention_center ;
+    ld:sentenceId "1".
+
+ld:dimitrios_philipopoulos a ld:Counsel ;
+    ld:hasValue "Δημήτριος Φιλιππόπουλος" ;
+    ld:sentenceId "1".
+
+ld:korydallos_detention_center a ld:DetentionCenter ;
+    ld:hasValue "Κατάστημα Κράτησης Κορυδαλλού" ;
+    ld:sentenceId "1".
+ld:FiveMemberCourtOfAppeal_Piraeus_2015 a ld:FiveMemberCourtOfAppeal ;
+    ld:hasValue "Πενταμελές Εφετείο Πειραιά" ;
+    ld:sentenceId "2".
+
+ld:Decision_582_2015 a ld:LegalEntity ;
+    ld:hasValue "Απόφαση υπ' αριθ. 582/2015 του Πενταμελούς Εφετείου Πειραιά" ;
+    ld:sentenceId "2".
+ld:PanagiotisPapadopoulos ld:appealsAgainst ld:Decision_582_2015 ;
+    ld:sentenceId "3".
+
+ld:Decision_582_2015 ld:hasAppeal ld:PanagiotisPapadopoulos ;
+    ld:hasDate "2015-00-00"^^xsd:date ;  # Placeholder for unknown date
+    ld:sentenceId "3".
+
+ld:FiveMemberCourtOfAppeal_Piraeus_2015 ld:issuedDecision ld:Decision_582_2015 ;
+    ld:sentenceId "3".
+
+ld:PanagiotisPapadopoulos ld:hasAppealReason ld:appeal_reason_2016_03_08 ;
+    ld:sentenceId "3".
+
+ld:appeal_reason_2016_03_08 a ld:LegalEntity ;
+    ld:hasValue "Αίτηση αναίρεσης του Παναγιώτη Παπαδόπουλου με αίτιο τους λόγους που αναφέρονται στην από 8 Μαρτίου 2016 αίτησή του" ;
+    ld:hasDate "2016-03-08"^^xsd:date ;
+    ld:sentenceId "3".
+
+ld:appeal_reason_2016_03_08 ld:registeredUnderNumber "12316"^^xsd:string ;
+    ld:sentenceId "3".
+ld:PanagiotisPapadopoulos ld:hasAppealRepresentation ld:dimitrios_philipopoulos ;
+    ld:sentenceId "4".
+
+ld:KonstantinosParaskevidis ld:proposedAction ld:appeal_rejection_proposal ;
+    ld:sentenceId "4".
+
+ld:appeal_rejection_proposal a ld:LegalEntity ;
+    ld:hasValue "Απόρριψη της προκείμενης αίτησης αναίρεσης" ;
+    ld:sentenceId "4".
